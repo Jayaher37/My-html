@@ -1,231 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display Belgian Flag</title>
-        <style>
-            #belgianFlag {
-                display: none;
-                width: 150px;
-                height: 130px;
-                border: 1px solid #000;
-            }
-            .black { background-color: #000 }
-            .yellow { background-color: #fdda24; }
-            .red { background-color: #ef333f; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display French Flag</title>
-        <style>
-            #frenchFlag {
-                display: none;
-                width: 150px;
-                height: 100px;
-                border: 1px solid #000;
-            }
-            .blue { background-color: #000091; }
-            .white { background-color: white; }
-            .red { background-color: #e1000f; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display German Flag</title>
-        <style>
-            #germanFlag {
-                display: none;
-                width: 150px;
-                height: 90px;
-                border: 1px solid #000;
-            }
-            .black { background-color: #000; }
-            .red { background-color: #dd0000; }
-            .yellow { background-color: #ffcc00; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display Luxembourgish Flag</title>
-        <style>
-            #luxembourgishFlag {
-                display: none;
-                width: 150px;
-                height: 90px;
-                border: 1px solid #000;
-            }
-            .red { background-color: #ea141d; }
-            .white { background-color: #fff; }
-            .lightblue { background-color: #51adda; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display Dutch Flag</title>
-        <style>
-            #dutchFlag {
-                display: none;
-                width: 150px;
-                height: 100px;
-                border: 1px solid #000;
-            }
-            .red { background-color: #ae1c28; }
-            .white { background-color: #fff; }
-            .blue { background-color: #2146ab; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display Polish Flag</title>
-        <style>
-            #polishFlag {
-                display: none;
-                width: 152px;
-                height: 95px;
-                border: 1px solid #000;
-            }
-            .white { background-color: #fff; }
-            .red { background-color: #dc1432; }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display Swiss Flag</title>
-        <style>
-            #swissFlag {
-                display: none;
-                width: 150px;
-                height: 150px;
-                border: 1px solid #000;
-            }
-            .swred { background-color: #da291c; }
-            .white { background-color: #fff;}
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Display American Flag</title>
-        <style>
-            #americanFlag {
-                display: none;
-                width: 190px;
-                height: 100px;
-                border: 1px solid #000;
-            }
-            .usred { background-color: #b31942; }
-            .white { background-color: #fff;}
-            .navy { background-color: #3c3b6e; }
-        </style>
-    </head>
-    <body>
-        <button id="belgiumButton">Belgium</button>
-        <div id="belgianFlag">
-            <div class="black" style="width: 33.33%; height: 100%; float: left;"></div>
-            <div class="yellow" style="width: 33.33%; height: 100%; float: left;"></div>
-            <div class="red" style="width: 33.33%; height: 100%; float: left;"></div>
-        </div>
-    
-        <script>
-            document.getElementById('belgiumButton').addEventListener('click', function() {
-                document.getElementById('belgianFlag').style.display = 'block';
-            });
-        </script>
-        <button id="franceButton">France</button>
-        <div id="frenchFlag">
-            <div class="blue" style="width: 33.33%; height: 100%; float: left;"></div>
-            <div class="white" style="width: 33.33%; height: 100%; float: left;"></div>
-            <div class="red" style="width: 33.33%; height: 100%; float: left;"></div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flags</title>
+    <style>
+        .flag {
+            display: none;
+            border: 1px solid #000;
+        }
+        #armenianFlag { height: 75px; width: 150px;}
+        .arred { background-color: #d90012; }
+        .arblue { background-color: #001489; }
+        .arorange { background-color: #ff9e1b; }
+        
+        #austrianFlag { height: 100px; width: 150px;}
+        .white { background-color: #fff; }
+        .aured { background-color: #c8102e; }
+        
+        #bahamianFlag { position: relative; height: 75px; width: 150px; }
+        .bateal { background-color: #00778b; }
+        .bayellow { background-color: #ffc72c; }
+        .batriangle { border-color: transparent #000000 transparent transparent; }
+        
+        #bangladeshiFlag { height: 90px; width: 150px;}
+        .bngreen { background-color: #006a4e; }
+        .bncircle { background-color: #f42a41; border-radius: 50%; }
+        
+        #belgianFlag { height: 130px; width: 150px;}
+        .black { background-color: #000; }
+        .beyellow { background-color: #fdda24; }
+        .bered { background-color: #ef333f; }
+        
+        #benineseFlag { height: 100px; width: 150px;}
+        .bigreen { background-color: #008751; }
+        .biyellow { background-color: #fcd116; }
+        .bired { background-color: #e8112d; }
+        
+        #batswanaFlag { height: 96px; width: 144px;}
+        .bolightblue { background-color: #abcae9; }
+        
+        #bulgarianFlag { height: 90px; width: 150px;}
+        .bugreen { background-color: #00966e; }
+        .bured { background-color: #d62612; }
+        
+        #danishFlag { height: 112px; width: 148px;}
+        .dnred { background-color: #c8102e; }
 
-        <script>
-            document.getElementById('franceButton').addEventListener('click', function() {
-                document.getElementById('frenchFlag').style.display = 'block';
-            });
-        </script>
-        <button id="germanyButton">Germany</button>
-        <div id="germanFlag">
-            <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="red" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="yellow" style="width: 100%; height: 33.33%; float: top;"></div>
-        </div>
+        #finnishFlag { height: 88px; width: 144px;}
+        .fiblue { background-color: #18447e; }
 
-        <script>
-            document.getElementById('germanyButton').addEventListener('click', function() {
-                document.getElementById('germanFlag').style.display = 'block';
-            });
-        </script>
-        <button id="luxembourgButton">Luxembourg</button>
-        <div id="luxembourgishFlag">
-            <div class="red" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="lightblue" style="width: 100%; height: 33.33%; float: top;"></div>
-        </div>
+        #frenchFlag { height: 100px; width: 150px;}
+        .frblue { background-color: #000091; }
+        .frred { background-color: #e1000f; }
 
-        <script>
-            document.getElementById('luxembourgButton').addEventListener('click', function() {
-                document.getElementById('luxembourgishFlag').style.display = 'block';
-            });
-        </script>
-        <button id="netherlandsButton">The Netherlands</button>
-        <div id="dutchFlag">
-            <div class="red" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
-            <div class="blue" style="width: 100%; height: 33.33%; float: top;"></div>
-        </div>
+        #germanFlag { height: 90px; width: 150px;}
+        .gered { background-color: #dd0000;}
+        .geyellow { background-color: #ffcc00; }
 
-        <script>
-            document.getElementById('netherlandsButton').addEventListener('click', function() {
-                document.getElementById('dutchFlag').style.display = 'block';
-            });
-        </script>
-        <button id="polandButton">Poland</button>
-        <div id="polishFlag">
-            <div class="white" style="width: 100%; height: 50%; float: top;"></div>
-            <div class="red" style="width: 100%; height: 50%; float: top;"></div>
-        </div>
+        #irishFlag { height: 75px; width: 150px;}
+        .irgreen { background-color: #169B62; }
+        .irorange { background-color: #ff883e; }
+        
+        #japaneseFlag { height: 100px; width: 150px;}
+        .jpcircle { background-color: #bc002c; border-radius: 50%; }
 
-        <script>
-            document.getElementById('polandButton').addEventListener('click', function() {
-                document.getElementById('polishFlag').style.display = 'block';
-            });
-        </script>
-        <button id="switzerlandButton">Switzerland</button>
-        <div id="swissFlag">
-            <div class="swred" style="width: 100%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
-            <div class="white" style="width: 20%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 20%; height: 20%; float: left;"></div>
-            <div class="white" style="width: 60%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 20%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
-            <div class="white" style="width: 20%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
-            <div class="swred" style="width: 100%; height: 20%; float: left;"></div>
-        </div>
+        #luxembourgishFlag { height: 90px; width: 150px;}
+        .lured { background-color: #ea141d; }
+        .lulightblue { background-color: #51adda; }
 
-        <script>
-            document.getElementById('switzerlandButton').addEventListener('click', function() {
-                document.getElementById('swissFlag').style.display = 'block';
-            });
-        </script>
-        <button id="americaButton">US</button>
-        <div id="americanFlag">
-            <div class="navy" style="width: 40%; height: 53.8461%; float: left;"></div>
-            <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
-            <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
-            <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
-        </div>
+        #dutchFlag { height: 100px; width: 150px;}
+        .nered { background-color: #ae1c28; }
+        .neblue { background-color: #2146ab; }
 
-        <script>
-            document.getElementById('americaButton').addEventListener('click', function() {
-                document.getElementById('americanFlag').style.display = 'block';
-            });
-        </script>
-    </body>
-    </html>
+        #polishFlag { height: 95px; width: 152px;}
+        .pored { background-color: #dc1432;}
+
+        #swedishFlag { height: 95px; width: 152px;}
+        .swteal { background-color: #005293; }
+        .swyellow { background-color: #ffcd00; }
+
+        #swissFlag { height: 150px; width: 150px;}
+        .swred { background-color: #da291c; }
+
+        #americanFlag { height: 80px; width: 152px;}
+        .usred { background-color: #b31942; }
+        .usnavy { background-color: #3c3b6e; }
+    </style>
+</head>
+<body>
+
+<select id="countrySelect">
+    <option value="">Select a country</option>
+    <option value="armenia">Armenia</option>
+    <option value="austria">Austria</option>
+    <option value="bahamas">The Bahamas</option>
+    <option value="bangladesh">Bangladesh</option>
+    <option value="belgium">Belgium</option>
+    <option value="benin">Benin</option>
+    <option value="botswana">Botswana</option>
+    <option value="bulgaria">Bulgaria</option>
+    <option value="denmark">Denmark</option>
+    <option value="finland">Finland</option>
+    <option value="france">France</option>
+    <option value="germany">Germany</option>
+    <option value="ireland">Ireland</option>
+    <option value="japan">Japan</option>
+    <option value="luxembourg">Luxembourg</option>
+    <option value="netherlands">Netherlands</option>
+    <option value="poland">Poland</option>
+    <option value="sweden">Sweden</option>
+    <option value="switzerland">Switzerland</option>
+    <option value="america">United States</option>
+</select>
+
+<div id="armenianFlag" class="flag">
+    <div class="arred" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="arblue" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="arorange" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="austrianFlag" class="flag">
+    <div class="aured" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="aured" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="bahamianFlag" class="flag">
+    <div class="bateal" style="width: 100%; height: 33.33%;"></div>
+    <div class="bayellow" style="width: 100%; height: 33.33%;"></div>
+    <div class="bateal" style="width: 100%; height: 33.33%;"></div>
+    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 37.5px 64.592px 37.5px 0; border-color: transparent #000000 transparent transparent; position: absolute; top: 0; left: 0;50%; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+</div>
+
+<div id="bangladeshiFlag" class="flag">
+    <div class="bngreen" style="width: 100%; height: 100%; float: top;"></div>
+    <div class="bncircle" style="width: 60px; height: 60px; position: relative; top: -75px; left: 37.5px;"></div>
+</div>
+
+<div id="belgianFlag" class="flag">
+    <div class="black" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="beyellow" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="bered" style="width: 33.33%; height: 100%; float: left;"></div>
+</div>
+
+<div id="benineseFlag" class="flag">
+    <div class="bigreen" style="width: 40%; height: 100%; float: left;"></div>
+    <div class="biyellow" style="width: 60%; height: 50%; float: left;"></div>
+    <div class="bired" style="width: 60%; height: 50%; float: left;"></div>
+</div>
+
+<div id="batswanaFlag" class="flag">
+    <div class="bolightblue" style="width: 144px; height: 36px; float: top;"></div>
+    <div class="white" style="width: 144px; height: 4px; float: top;"></div>
+    <div class="black" style="width: 144px; height: 16px; float: top;"></div>
+    <div class="white" style="width: 144px; height: 4px; float: top;"></div>
+    <div class="bolightblue" style="width: 144px; height: 36px; float: top;"></div>
+</div>
+
+<div id="bulgarianFlag" class="flag">
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="bugreen" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="bured" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="danishFlag" class="flag">
+    <div class="dnred" style="width: 48px; height: 48px; float: left;"></div>
+    <div class="white" style="width: 16px; height: 48px; float: left;"></div>
+    <div class="dnred" style="width: 84px; height: 48px; float: left;"></div>
+    <div class="white" style="width: 148px; height: 16px; float: left;"></div>
+    <div class="dnred" style="width: 48px; height: 48px; float: left;"></div>
+    <div class="white" style="width: 16px; height: 48px; float: left;"></div>
+    <div class="dnred" style="width: 84px; height: 48px; float: left;"></div>
+</div>
+
+<div id="finnishFlag" class="flag">
+    <div class="white" style="width: 40px; height: 32px; float: left;"></div>
+    <div class="fiblue" style="width: 24px; height: 32px; float: left;"></div>
+    <div class="white" style="width: 80px; height: 32px; float: left;"></div>
+    <div class="fiblue" style="width: 144px; height: 24px; float: left;"></div>
+    <div class="white" style="width: 40px; height: 32px; float: left;"></div>
+    <div class="fiblue" style="width: 24px; height: 32px; float: left;"></div>
+    <div class="white" style="width: 80px; height: 32px; float: left;"></div>
+</div>
+
+<div id="frenchFlag" class="flag">
+    <div class="frblue" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="white" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="frred" style="width: 33.33%; height: 100%; float: left;"></div>
+</div>
+
+<div id="germanFlag" class="flag">
+    <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="gered" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="geyellow" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="irishFlag" class="flag">
+    <div class="irgreen" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="white" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="irorange" style="width: 33.33%; height: 100%; float: left;"></div>
+</div>
+
+<div id="japaneseFlag" class="flag">
+    <div class="white" style="width: 100%; height: 100%; float: top;"></div>
+    <div class="jpcircle" style="width: 60px; height: 60px; position: relative; top: -80px; left: 45px;"></div>
+</div>
+
+<div id="luxembourgishFlag" class="flag">
+    <div class="lured" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="lulightblue" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="dutchFlag" class="flag">
+    <div class="nered" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="neblue" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="polishFlag" class="flag">
+    <div class="white" style="width: 100%; height: 50%; float: top;"></div>
+    <div class="pored" style="width: 100%; height: 50%; float: top;"></div>
+</div>
+
+<div id="swedishFlag" class="flag">
+    <div class="swteal" style="width: 47.5px; height: 38px; float: left;"></div>
+    <div class="swyellow" style="width: 19px; height: 38px; float: left;"></div>
+    <div class="swteal" style="width: 85.5px; height: 38px; float: left;"></div>
+    <div class="swyellow" style="width: 152px; height: 19px; float: left;"></div>
+    <div class="swteal" style="width: 47.5px; height: 38px; float: left;"></div>
+    <div class="swyellow" style="width: 19px; height: 38px; float: left;"></div>
+    <div class="swteal" style="width: 85.5px; height: 38px; float: left;"></div>
+</div>
+
+<div id="swissFlag" class="flag">
+    <div class="swred" style="width: 100%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
+    <div class="white" style="width: 20%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 20%; height: 20%; float: left;"></div>
+    <div class="white" style="width: 60%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 20%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
+    <div class="white" style="width: 20%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 40%; height: 20%; float: left;"></div>
+    <div class="swred" style="width: 100%; height: 20%; float: left;"></div>
+</div>
+
+<div id="americanFlag" class="flag">
+    <div class="usnavy" style="width: 40%; height: 53.8461%; float: left;"></div>
+    <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 60%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
+    <div class="white" style="width: 100%; height: 7.6923%; float: left;"></div>
+    <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
+</div>
+
+<script>
+    const countrySelect = document.getElementById('countrySelect');
+    const flags = {
+        armenia: document.getElementById('armenianFlag'),
+        austria: document.getElementById('austrianFlag'),
+        bahamas: document.getElementById('bahamianFlag'),
+        bangladesh: document.getElementById('bangladeshiFlag'),
+        belgium: document.getElementById('belgianFlag'),
+        benin: document.getElementById('benineseFlag'),
+        botswana: document.getElementById('batswanaFlag'),
+        bulgaria: document.getElementById('bulgarianFlag'),
+        denmark: document.getElementById('danishFlag'),
+        finland: document.getElementById('finnishFlag'),
+        france: document.getElementById('frenchFlag'),
+        germany: document.getElementById('germanFlag'),
+        ireland: document.getElementById('irishFlag'),
+        japan: document.getElementById('japaneseFlag'),
+        luxembourg: document.getElementById('luxembourgishFlag'),
+        netherlands: document.getElementById('dutchFlag'),
+        poland: document.getElementById('polishFlag'),
+        sweden: document.getElementById('swedishFlag'),
+        switzerland: document.getElementById('swissFlag'),
+        america: document.getElementById('americanFlag')
+    };
+
+    countrySelect.addEventListener('change', function() {
+        // Hide all flags
+        for (const flag in flags) {
+            flags[flag].style.display = 'none';
+        }
+
+        const selectedCountry = this.value;
+        if (selectedCountry) {
+            flags[selectedCountry].style.display = 'block';
+        }
+    });
+</script>
+
+</body>
+</html>
