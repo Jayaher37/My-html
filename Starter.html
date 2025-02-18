@@ -43,6 +43,95 @@
         #bulgarianFlag { height: 90px; width: 150px;}
         .bugreen { background-color: #00966e; }
         .bured { background-color: #d62612; }
+
+        #chadianFlag { height: 100px; width: 150px;}
+        .cdblue { background-color: #002664; }
+        .cdyellow { background-color: #fecb00; }
+        .cdred { background-color: #c60c30; }
+
+        #chineseFlag { height: 100px; width: 150px;}
+        .cired { background-color: #da251d; }
+        .cistar1 {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 27.5px;
+            transform: rotate(340deg); /* Position star at center */
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 10px 15px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+        }
+        .cistar1:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 17.5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 10px 15px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-17.5px, -20px) rotate(-144deg);
+        }
+        .cistar1:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 17.5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 10px 15px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-17.5px, -20px) rotate(-72deg);
+        }
+        .cistar2 {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 15.833px;
+            transform: rotate(340deg); /* Position star at center */
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 3.33px 5px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+        }
+        .cistar2:before {
+            content: '';
+            position: absolute;
+            top: 2.5px;
+            left: 8.75px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 3.33px 5px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-17.5px, -6.33px) rotate(-144deg);
+        }
+        .cistar2:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 8.75px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 3.33px 5px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-17.5px, -6.33px) rotate(-72deg);
+        }
+
+        #colombianFlag { height: 100px; width: 150px;}
+        .coyellow { background-color: #fcd116; }
+        .coblue { background-color: #003893; }
+        .cored { background-color: #ce1126; }
+
+        #czechFlag { position: relative; height: 100px; width: 150px; }
+        .czred { background-color: #e2003d; }
+        .cztriangle { border-color: transparent #11457e transparent transparent; }
         
         #danishFlag { height: 112px; width: 148px;}
         .dnred { background-color: #c8102e; }
@@ -89,11 +178,51 @@
         
         #ukrainianFlag { height: 100px; width: 150px;}
         .ukblue { background-color: #0056b9; }
-        .ukyellow { background-color: #ffd800; }
+        .ukyellow { background-color: #ffcd00; }
 
         #americanFlag { height: 80px; width: 152px;}
         .usred { background-color: #b31942; }
         .usnavy { background-color: #3c3b6e; }
+
+        #vietnameseFlag { height: 100px; width: 150px;}
+        .vtred { background-color: #da251d; }
+        .vtstar {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 70px;
+            transform: rotate(340deg); /* Position star at center */
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 20px 30px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+        }
+        .vtstar:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 45px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 20px 30px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-45px, -50px) rotate(-144deg);
+        }
+        .vtstar:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 45px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 20px 30px 0;
+            border-color: transparent #ffcd00 transparent transparent;
+            transform: translate(-45px, -50px) rotate(-72deg);
+        }
+
     </style>
 </head>
 <body>
@@ -108,6 +237,9 @@
     <option value="benin">Benin</option>
     <option value="botswana">Botswana</option>
     <option value="bulgaria">Bulgaria</option>
+    <option value="chad">Chad</option>
+    <option value="china">China</option>
+    <option value="colombia">Colombia</option>
     <option value="czechia">Czechia</option>
     <option value="denmark">Denmark</option>
     <option value="finland">Finland</option>
@@ -123,6 +255,7 @@
     <option value="switzerland">Switzerland</option>
     <option value="ukraine">Ukraine</option>
     <option value="america">United States</option>
+    <option value="vietnam">Vietnam</option>
 </select>
 
 <div id="armenianFlag" class="flag">
@@ -141,7 +274,7 @@
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
     <div class="bayellow" style="width: 100%; height: 33.33%;"></div>
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
-    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 37.5px 64.592px 37.5px 0; border-color: transparent #000000 transparent transparent; position: absolute; top: 0; left: 0;50%; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 37.5px 64.592px 37.5px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
 </div>
 
 <div id="bangladeshiFlag" class="flag">
@@ -175,10 +308,31 @@
     <div class="bured" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
+<div id="chadianFlag" class="flag">
+    <div class="cdblue" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="cdyellow" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="cdred" style="width: 33.33%; height: 100%; float: left;"></div>
+</div>
+
+<div id="chineseFlag" class="flag">
+    <div class="cired" style="width: 100%; height: 100%;"></div>
+    <div class="cistar1"></div>
+    <div class="cistar2"></div>
+    <div class="cistar3"></div>
+    <div class="cistar4"></div>
+    <div class="cistar5"></div>
+</div>
+
+<div id="colombianFlag" class="flag">
+    <div class="coyellow" style="width: 100%; height: 50%; float: top;"></div>
+    <div class="coblue" style="width: 100%; height: 25%; float: top;"></div>
+    <div class="cored" style="width: 100%; height: 25%; float: top;"></div>
+</div>
+
 <div id="czechFlag" class="flag">
     <div class="white" style="width: 100%; height: 50%;"></div>
     <div class="czred" style="width: 100%; height: 50%;"></div>
-    <div class="cztriangle" style="width: 0; height: 0; border-style: solid; border-width: 37.5px 64.592px 37.5px 0; border-color: transparent #000000 transparent transparent; position: absolute; top: 0; left: 0;50%; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="cztriangle" style="width: 0; height: 0; border-style: solid; border-width: 50px 75px 50px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
 </div>
 
 <div id="danishFlag" class="flag">
@@ -293,6 +447,11 @@
     <div class="usred" style="width: 100%; height: 7.6923%; float: left;"></div>
 </div>
 
+<div id="vietnameseFlag" class="flag">
+    <div class="vtred" style="width: 100%; height: 100%;"></div>
+    <div class="vtstar"></div>
+</div>
+
 <script>
     const countrySelect = document.getElementById('countrySelect');
     const flags = {
@@ -304,6 +463,9 @@
         benin: document.getElementById('benineseFlag'),
         botswana: document.getElementById('batswanaFlag'),
         bulgaria: document.getElementById('bulgarianFlag'),
+        chad: document.getElementById('chadianFlag'),
+        china: document.getElementById('chineseFlag'),
+        colombia: document.getElementById('colombianFlag'),
         czechia: document.getElementById('czechFlag'),
         denmark: document.getElementById('danishFlag'),
         finland: document.getElementById('finnishFlag'),
@@ -318,7 +480,8 @@
         sweden: document.getElementById('swedishFlag'),
         switzerland: document.getElementById('swissFlag'),
         ukraine: document.getElementById('ukrainianFlag'),
-        america: document.getElementById('americanFlag')
+        america: document.getElementById('americanFlag'),
+        vietnam: document.getElementById('vietnameseFlag')
     };
 
     countrySelect.addEventListener('change', function() {
