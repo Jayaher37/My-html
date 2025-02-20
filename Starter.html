@@ -93,6 +93,22 @@
 
         #japaneseFlag { height: 100px; width: 150px;}
         .jpcircle { background-color: #bc002c; border-radius: 50%; }
+        
+        #liberianFlag { height: 80px; width: 152px; position: relative; display: flex; flex-direction: column; }
+        .stripe { height: 7.27272727px; width: 152px; }
+        .red { background-color: #bf0a30; }
+        .blue { background-color: #002868; width: 56.36363636px; height: 56.36363636px; position: absolute; top: 0; left: 0; z-index: 1; }
+        .stripe:nth-child(2) { top: 0; }
+        .stripe:nth-child(3) { top: 7.27272727px; }
+        .stripe:nth-child(4) { top: 14.54545454px; }
+        .stripe:nth-child(5) { top: 21.81818181px; }
+        .stripe:nth-child(6) { top: 29.09090909px; }
+        .stripe:nth-child(7) { top: 36.36363636px; }
+        .stripe:nth-child(8) { top: 43.63636363px; }
+        .stripe:nth-child(9) { top: 50.9090909px; }
+        .stripe:nth-child(10) { top: 58.18181818px; }
+        .stripe:nth-child(11) { top: 65.45454545px; }
+        .stripe:nth-child(12) { top: 72.72727272px; }
 
         #luxembourgishFlag { height: 90px; width: 150px;}
         .lured { background-color: #ea141d; }
@@ -112,6 +128,10 @@
         #russianFlag { height: 100px; width: 150px;}
         .rublue { background-color: #0033a0; }
         .rured { background-color: #da291c; }
+        
+        #sierraLeoneanFlag { height: 100px; width: 150px;}
+        .sigreen { background-color: #1eb53a; }
+        .siblue { background-color: #0072c6; }
 
         #swedishFlag { height: 95px; width: 152px;}
         .swteal { background-color: #005293; }
@@ -199,7 +219,9 @@
         .vtstar { content: ''; position: absolute; top: 50px; left: 70px; transform: rotate(340deg); width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; }
         .vtstar:before { content: ''; position: absolute; top: 21px; left: 45px; width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; transform: translate(-45px, -50px) rotate(-144deg); }
         .vtstar:after { content: ''; position: absolute; top: 21px; left: 45px; width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; transform: translate(-45px, -50px) rotate(-72deg); }
-
+        
+        #yemeniFlag { height: 100px; width: 150px;}
+        .yered { background-color: #ce1126;}
     </style>
 </head>
 <body>
@@ -226,15 +248,18 @@
     <option value="ireland">Ireland</option>
     <option value="japan">Japan</option>
     <option value="luxembourg">Luxembourg</option>
+    <option value="liberia">Liberia</option>
     <option value="netherlands">Netherlands</option>
     <option value="norway">Norway</option>
     <option value="poland">Poland</option>
     <option value="russia">Russia</option>
+    <option value="sierraLeone">Sierra Leone</option>
     <option value="sweden">Sweden</option>
     <option value="switzerland">Switzerland</option>
     <option value="ukraine">Ukraine</option>
     <option value="america">United States</option>
     <option value="vietnam">Vietnam</option>
+    <option value="yemen">Yemen</option>
 </select>
 
 <div id="armenianFlag" class="flag">
@@ -377,6 +402,22 @@
     <div class="jpcircle" style="width: 60px; height: 60px; position: relative; top: -80px; left: 45px;"></div>
 </div>
 
+<div id="liberianFlag" class="flag">
+    <div class="blue">
+        <div class="usstar usstar-1"></div>
+    </div>
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe red"></div>
+
 <div id="luxembourgishFlag" class="flag">
     <div class="lured" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
@@ -418,6 +459,12 @@
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="rublue" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="rured" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="sierraLeoneanFlag" class="flag">
+    <div class="sigreen" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="siblue" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
 <div id="swedishFlag" class="flag">
@@ -522,6 +569,12 @@
     <div class="vtstar"></div>
 </div>
 
+<div id="yemeniFlag" class="flag">
+    <div class="yered" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
 <script>
     const countrySelect = document.getElementById('countrySelect');
     const flags = {
@@ -544,16 +597,19 @@
         iceland: document.getElementById('icelandicFlag'),
         ireland: document.getElementById('irishFlag'),
         japan: document.getElementById('japaneseFlag'),
+        liberia: document.getElementById('liberianFlag'),
         luxembourg: document.getElementById('luxembourgishFlag'),
         netherlands: document.getElementById('dutchFlag'),
         norway: document.getElementById('norwegianFlag'),
         poland: document.getElementById('polishFlag'),
         russia: document.getElementById('russianFlag'),
+        sierraLeone: document.getElementById('sierraLeoneanFlag'),
         sweden: document.getElementById('swedishFlag'),
         switzerland: document.getElementById('swissFlag'),
         ukraine: document.getElementById('ukrainianFlag'),
         america: document.getElementById('americanFlag'),
-        vietnam: document.getElementById('vietnameseFlag')
+        vietnam: document.getElementById('vietnameseFlag'),
+        yemen: document.getElementById('yemeniFlag')
     };
 
     countrySelect.addEventListener('change', function() {
