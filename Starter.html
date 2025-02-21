@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Flags</title>
+    <h1 style="font-size:48px;">Country Flag Picker</h1>
     <style>
         .flag {
             display: none;
             border: 1px solid #000;
         }
+        #afghanFlag { height: 100px; width: 150px; position: relative; }
+        .white { background-color: #fff; }
+
+        #austrianFlag { height: 100px; width: 150px;}
+        .aured { background-color: #c8102e; }
+
         #armenianFlag { height: 75px; width: 150px;}
         .arred { background-color: #d90012; }
         .arblue { background-color: #001489; }
@@ -23,7 +30,7 @@
         .bayellow { background-color: #ffc72c; }
         .batriangle { border-color: transparent #000000 transparent transparent; }
 
-        #bangladeshiFlag { height: 90px; width: 150px;}
+        #bangladeshiFlag { height: 90px; width: 150px; position: relative; }
         .bngreen { background-color: #006a4e; }
         .bncircle { background-color: #f42a41; border-radius: 50%; }
 
@@ -43,6 +50,9 @@
         #bulgarianFlag { height: 90px; width: 150px;}
         .bugreen { background-color: #00966e; }
         .bured { background-color: #d62612; }
+
+        #canadianFlag { height: 75px; width: 150px; position: relative; }
+        .cared { background-color: #f00; }
 
         #chadianFlag { height: 100px; width: 150px;}
         .cdblue { background-color: #002664; }
@@ -65,6 +75,11 @@
         .coblue { background-color: #003893; }
         .cored { background-color: #ce1126; }
 
+        #rcongoleseFlag { position: relative; height: 100px; width: 150px; }
+        .cbgreen { border-color: transparent #009543 transparent transparent; }
+        .cbred { border-color: transparent #dc241f transparent transparent; }
+        .cbyellow { background-color: #fbde4a; width: 50px; height: 100px; position: absolute; top: 0px; left: 50px; z-index: 1; transform: skew(-45deg); }
+
         #czechFlag { position: relative; height: 100px; width: 150px; }
         .czred { background-color: #e2003d; }
         .cztriangle { border-color: transparent #11457e transparent transparent; }
@@ -81,7 +96,7 @@
 
         #germanFlag { height: 90px; width: 150px;}
         .gered { background-color: #dd0000;}
-        .geyellow { background-color: #ffcc00; }
+        .geyellow { background-color: #fc0; }
         
         #icelandicFlag { height: 108px; width: 150px;}
         .icblue { background-color: #02529c; }
@@ -91,24 +106,24 @@
         .irgreen { background-color: #169B62; }
         .irorange { background-color: #ff883e; }
 
-        #japaneseFlag { height: 100px; width: 150px;}
+        #japaneseFlag { height: 100px; width: 150px; position: relative; }
         .jpcircle { background-color: #bc002c; border-radius: 50%; }
         
-        #liberianFlag { height: 80px; width: 152px; position: relative; display: flex; flex-direction: column; }
-        .stripe { height: 7.27272727px; width: 152px; }
-        .red { background-color: #bf0a30; }
-        .blue { background-color: #002868; width: 56.36363636px; height: 56.36363636px; position: absolute; top: 0; left: 0; z-index: 1; }
-        .stripe:nth-child(2) { top: 0; }
-        .stripe:nth-child(3) { top: 7.27272727px; }
-        .stripe:nth-child(4) { top: 14.54545454px; }
-        .stripe:nth-child(5) { top: 21.81818181px; }
-        .stripe:nth-child(6) { top: 29.09090909px; }
-        .stripe:nth-child(7) { top: 36.36363636px; }
-        .stripe:nth-child(8) { top: 43.63636363px; }
-        .stripe:nth-child(9) { top: 50.9090909px; }
-        .stripe:nth-child(10) { top: 58.18181818px; }
-        .stripe:nth-child(11) { top: 65.45454545px; }
-        .stripe:nth-child(12) { top: 72.72727272px; }
+        #liberianFlag { height: 80px; width: 152px; position: relative; flex-direction: column; }
+        .lired { background-color: #bf0a30; }
+        .liblue { background-color: #002868; width: 36.36363636px; height: 36.36363636px; position: absolute; top: 0; left: 0; z-index: 1; }
+        .listripe1 { top: 0; }
+        .listripe2 { top: 9.09090909px; }
+        .listripe3 { top: 14.54545454px; }
+        .listripe4 { top: 21.81818181px; }
+        .listripe5 { top: 29.09090909px; }
+        .listripe6 { top: 36.36363636px; }
+        .listripe7 { top: 43.63636363px; }
+        .listripe8 { top: 50.9090909px; }
+        .listripe9 { top: 58.18181818px; }
+        .listripe10 { top: 65.45454545px; }
+        .listripe11 { top: 72.72727272px; }
+        .listar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 24px; height: 24px; top: 5.8px; left: 5.8px; }  
 
         #luxembourgishFlag { height: 90px; width: 150px;}
         .lured { background-color: #ea141d; }
@@ -121,6 +136,10 @@
         #norwegianFlag { height: 112px; width: 154px;}
         .nored { background-color: #ba0c2f; }
         .noblue { background-color: #00205b; }
+
+        #palauanFlag { height: 90px; width: 144px; position: absolute; }
+        .pablue { background-color: #09f; }
+        .pacircle { background-color: #ff0; border-radius: 50%; }
 
         #polishFlag { height: 95px; width: 152px;}
         .pored { background-color: #dc1432;}
@@ -144,81 +163,64 @@
         .ukblue { background-color: #0056b9; }
         .ukyellow { background-color: #ffcd00; }
 
-        #americanFlag { height: 80px; width: 152px; position: relative; display: flex; flex-direction: column; }
-        .stripe { height: 6.153846153846154px; width: 152px; }
-        .red { background-color: #b31942; }
-        .white { background-color: #fff; }
-        .blue { background-color: #3c3b6e; width: 60.8px; height: 43.07692307692308px; position: absolute; top: 0; left: 0; z-index: 1; }
-        .stripe:nth-child(2) { top: 0; }
-        .stripe:nth-child(3) { top: 6.153846153846154px; }
-        .stripe:nth-child(4) { top: 12.307692307692308px; }
-        .stripe:nth-child(5) { top: 18.46153846153846px; }
-        .stripe:nth-child(6) { top: 24.615384615384616px; }
-        .stripe:nth-child(7) { top: 30.76923076923077px; }
-        .stripe:nth-child(8) { top: 36.92307692307692px; }
-        .stripe:nth-child(9) { top: 43.07692307692308px; }
-        .stripe:nth-child(10) { top: 49.23076923076923px; }
-        .stripe:nth-child(11) { top: 55.38461538461538px; }
-        .stripe:nth-child(12) { top: 61.53846153846154px; }
-        .stripe:nth-child(13) { top: 67.6923076923077px; }
-        .stripe:nth-child(14) { top: 73.84615384615385px; }
+        #americanFlag { height: 80px; width: 152px; position: relative; flex-direction: column; }
+        .usred { background-color: #b31942; }
+        .usblue { background-color: #3b3b6d; width: 60.8px; height: 43.07692307692308px; position: absolute; top: 0; left: 0; z-index: 1; }
         .usstar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 4.92307692308px; height: 4.92307692308px; }  
-        .usstar-1 { top: 4px; left: 5px; }
-        .usstar-2 { top: 4px; left: 14px; }
-        .usstar-3 { top: 4px; left: 23px; }
-        .usstar-4 { top: 4px; left: 32px; }
-        .usstar-5 { top: 4px; left: 41px; }
-        .usstar-6 { top: 4px; left: 50px; }
-        .usstar-7 { top: 8.2px; left: 9.5px; }
-        .usstar-8 { top: 8.2px; left: 18.5px; }
-        .usstar-9 { top: 8.2px; left: 27.5px; }
-        .usstar-10 { top: 8.2px; left: 36.5px; }
-        .usstar-11 { top: 8.2px; left: 45.5px; }
-        .usstar-12 { top: 12.4px; left: 5px; }
-        .usstar-13 { top: 12.4px; left: 14px; }
-        .usstar-14 { top: 12.4px; left: 23px; }
-        .usstar-15 { top: 12.4px; left: 32px; }
-        .usstar-16 { top: 12.4px; left: 41px; }
-        .usstar-17 { top: 12.4px; left: 50px; }
-        .usstar-18 { top: 16.6px; left: 9.5px; }
-        .usstar-19 { top: 16.6px; left: 18.2px; }
-        .usstar-20 { top: 16.6px; left: 27.5px; }
-        .usstar-21 { top: 16.6px; left: 36.5px; }
-        .usstar-22 { top: 16.6px; left: 45.5px; }
-        .usstar-23 { top: 20.8px; left: 5px; }
-        .usstar-24 { top: 20.8px; left: 14px; }
-        .usstar-25 { top: 20.8px; left: 23px; }
-        .usstar-26 { top: 20.8px; left: 32px; }
-        .usstar-27 { top: 20.8px; left: 41px; }
-        .usstar-28 { top: 20.8px; left: 50px; }
-        .usstar-29 { top: 25px; left: 9.5px; }
-        .usstar-30 { top: 25px; left: 18.2px; }
-        .usstar-31 { top: 25px; left: 27.5px; }
-        .usstar-32 { top: 25px; left: 36.5px; }
-        .usstar-33 { top: 25px; left: 45.5px; }
-        .usstar-34 { top: 29.2px; left: 5px; }
-        .usstar-35 { top: 29.2px; left: 14px; }
-        .usstar-36 { top: 29.2px; left: 23px; }
-        .usstar-37 { top: 29.2px; left: 32px; }
-        .usstar-38 { top: 29.2px; left: 41px; }
-        .usstar-39 { top: 29.2px; left: 50px; }
-        .usstar-40 { top: 33.4px; left: 9.5px; }
-        .usstar-41 { top: 33.4px; left: 18.2px; }
-        .usstar-42 { top: 33.4px; left: 27.5px; }
-        .usstar-43 { top: 33.4px; left: 36.5px; }
-        .usstar-44 { top: 33.4px; left: 45.5px; }
-        .usstar-45 { top: 37.6px; left: 5px; }
-        .usstar-46 { top: 37.6px; left: 14px; }
-        .usstar-47 { top: 37.6px; left: 23px; }
-        .usstar-48 { top: 37.6px; left: 32px; }
-        .usstar-49 { top: 37.6px; left: 41px; }
-        .usstar-50 { top: 37.6px; left: 50px; }
+        .usstar-1 { top: 3px; left: 5px; }
+        .usstar-2 { top: 3px; left: 14px; }
+        .usstar-3 { top: 3px; left: 23px; }
+        .usstar-4 { top: 3px; left: 32px; }
+        .usstar-5 { top: 3px; left: 41px; }
+        .usstar-6 { top: 3px; left: 50px; }
+        .usstar-7 { top: 7px; left: 9.5px; }
+        .usstar-8 { top: 7px; left: 18.5px; }
+        .usstar-9 { top: 7px; left: 27.5px; }
+        .usstar-10 { top: 7px; left: 36.5px; }
+        .usstar-11 { top: 7px; left: 45.5px; }
+        .usstar-12 { top: 11px; left: 5px; }
+        .usstar-13 { top: 11px; left: 14px; }
+        .usstar-14 { top: 11px; left: 23px; }
+        .usstar-15 { top: 11px; left: 32px; }
+        .usstar-16 { top: 11px; left: 41px; }
+        .usstar-17 { top: 11px; left: 50px; }
+        .usstar-18 { top: 15px; left: 9.5px; }
+        .usstar-19 { top: 15px; left: 18.2px; }
+        .usstar-20 { top: 15px; left: 27.5px; }
+        .usstar-21 { top: 15px; left: 36.5px; }
+        .usstar-22 { top: 15px; left: 45.5px; }
+        .usstar-23 { top: 19px; left: 5px; }
+        .usstar-24 { top: 19px; left: 14px; }
+        .usstar-25 { top: 19px; left: 23px; }
+        .usstar-26 { top: 19px; left: 32px; }
+        .usstar-27 { top: 19px; left: 41px; }
+        .usstar-28 { top: 19px; left: 50px; }
+        .usstar-29 { top: 23px; left: 9.5px; }
+        .usstar-30 { top: 23px; left: 18.2px; }
+        .usstar-31 { top: 23px; left: 27.5px; }
+        .usstar-32 { top: 23px; left: 36.5px; }
+        .usstar-33 { top: 23px; left: 45.5px; }
+        .usstar-34 { top: 27px; left: 5px; }
+        .usstar-35 { top: 27px; left: 14px; }
+        .usstar-36 { top: 27px; left: 23px; }
+        .usstar-37 { top: 27px; left: 32px; }
+        .usstar-38 { top: 27px; left: 41px; }
+        .usstar-39 { top: 27px; left: 50px; }
+        .usstar-40 { top: 31px; left: 9.5px; }
+        .usstar-41 { top: 31px; left: 18.2px; }
+        .usstar-42 { top: 31px; left: 27.5px; }
+        .usstar-43 { top: 31px; left: 36.5px; }
+        .usstar-44 { top: 31px; left: 45.5px; }
+        .usstar-45 { top: 35px; left: 5px; }
+        .usstar-46 { top: 35px; left: 14px; }
+        .usstar-47 { top: 35px; left: 23px; }
+        .usstar-48 { top: 35px; left: 32px; }
+        .usstar-49 { top: 35px; left: 41px; }
+        .usstar-50 { top: 35px; left: 50px; }
 
-        #vietnameseFlag { height: 100px; width: 150px;}
+        #vietnameseFlag { height: 100px; width: 150px; position: relative;}
         .vtred { background-color: #da251d; }
-        .vtstar { content: ''; position: absolute; top: 50px; left: 70px; transform: rotate(340deg); width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; }
-        .vtstar:before { content: ''; position: absolute; top: 21px; left: 45px; width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; transform: translate(-45px, -50px) rotate(-144deg); }
-        .vtstar:after { content: ''; position: absolute; top: 21px; left: 45px; width: 0; height: 0; border-style: solid; border-width: 30px 20px 30px 0; border-color: transparent #ffcd00 transparent transparent; transform: translate(-45px, -50px) rotate(-72deg); }
+        .vtstar { position: absolute; background-color: #ffcd00; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 60px; height: 60px; top: 20px; left: 45px; }
         
         #yemeniFlag { height: 100px; width: 150px;}
         .yered { background-color: #ce1126;}
@@ -228,6 +230,7 @@
 
 <select id="countrySelect">
     <option value="">Select a country</option>
+    <option value="afghanistan">Afghanistan</option>
     <option value="armenia">Armenia</option>
     <option value="austria">Austria</option>
     <option value="bahamas">Bahamas, The</option>
@@ -236,9 +239,11 @@
     <option value="benin">Benin</option>
     <option value="botswana">Botswana</option>
     <option value="bulgaria">Bulgaria</option>
+    <option value="canada">Canada</option>
     <option value="chad">Chad</option>
     <option value="china">China</option>
     <option value="colombia">Colombia</option>
+    <option value="rcongo">Congo, Republic of the</option>
     <option value="czechia">Czechia</option>
     <option value="denmark">Denmark</option>
     <option value="finland">Finland</option>
@@ -247,10 +252,11 @@
     <option value="iceland">Iceland</option>
     <option value="ireland">Ireland</option>
     <option value="japan">Japan</option>
-    <option value="luxembourg">Luxembourg</option>
     <option value="liberia">Liberia</option>
+    <option value="luxembourg">Luxembourg</option>
     <option value="netherlands">Netherlands</option>
     <option value="norway">Norway</option>
+    <option value="palau">Palau</option>
     <option value="poland">Poland</option>
     <option value="russia">Russia</option>
     <option value="sierraLeone">Sierra Leone</option>
@@ -261,6 +267,11 @@
     <option value="vietnam">Vietnam</option>
     <option value="yemen">Yemen</option>
 </select>
+
+<div id="afghanFlag" class="flag">
+    <div class="white" style="width: 100%; height: 100%;"></div>
+    <img src="https://th.bing.com/th/id/OIP.oLM9W8qfD6XZ9TRY1eQ59gHaCS?w=349&h=108&c=7&r=0&o=5&pid=1.7" alt="Afghan symbol" style="width:130px; height:40px; position: absolute; top: 30px; left: 10px;">
+</div>
 
 <div id="armenianFlag" class="flag">
     <div class="arred" style="width: 100%; height: 33.33%; float: top;"></div>
@@ -278,12 +289,12 @@
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
     <div class="bayellow" style="width: 100%; height: 33.33%;"></div>
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
-    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 37.5px 64.592px 37.5px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 36.75px 64.592px 36.75px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
 </div>
 
 <div id="bangladeshiFlag" class="flag">
     <div class="bngreen" style="width: 100%; height: 100%; float: top;"></div>
-    <div class="bncircle" style="width: 60px; height: 60px; position: relative; top: -75px; left: 37.5px;"></div>
+    <div class="bncircle" style="width: 60px; height: 60px; position: absolute; top: 15px; left: 36px;"></div>
 </div>
 
 <div id="belgianFlag" class="flag">
@@ -312,6 +323,13 @@
     <div class="bured" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
+<div id="canadianFlag" class="flag">
+    <div class="cared" style="width: 25%; height: 100%; float: left;"></div>
+    <div class="white" style="width: 50%; height: 100%; float: left;"></div>
+    <div class="cared" style="width: 25%; height: 100%; float: left;"></div>
+    <img src="https://th.bing.com/th/id/OIP.SjgbbZj_1Ke8kQ0Jv-7xMwHaIB?w=161&h=180&c=7&r=0&o=5&pid=1.7" alt="Canadian symbol" style="width:64px; height:70px; position: absolute; top: 2.5px; left: 43px;">
+</div>
+
 <div id="chadianFlag" class="flag">
     <div class="cdblue" style="width: 33.33%; height: 100%; float: left;"></div>
     <div class="cdyellow" style="width: 33.33%; height: 100%; float: left;"></div>
@@ -331,6 +349,12 @@
     <div class="coyellow" style="width: 100%; height: 50%; float: top;"></div>
     <div class="coblue" style="width: 100%; height: 25%; float: top;"></div>
     <div class="cored" style="width: 100%; height: 25%; float: top;"></div>
+</div>
+
+<div id="rcongoleseFlag" class="flag">
+    <div class="cbgreen" style="width: 0; height: 0; border-style: solid; border-width: 0px 150px 100px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="cbred" style="width: 0; height: 0; border-style: solid; border-width: 100px 150px 0px 0; position: absolute; top: 0; left: 0; transform-origin: 2 50%;"></div>
+    <div class="cbyellow"></div>
 </div>
 
 <div id="czechFlag" class="flag">
@@ -398,25 +422,26 @@
 </div>
 
 <div id="japaneseFlag" class="flag">
-    <div class="white" style="width: 100%; height: 100%; float: top;"></div>
-    <div class="jpcircle" style="width: 60px; height: 60px; position: relative; top: -80px; left: 45px;"></div>
+    <div class="white" style="width: 100%; height: 100%;"></div>
+    <div class="jpcircle" style="width: 60px; height: 60px; position: absolute; top: 20px; left: 45px;"></div>
 </div>
 
 <div id="liberianFlag" class="flag">
-    <div class="blue">
-        <div class="usstar usstar-1"></div>
+    <div class="liblue">
+        <div class="listar"></div>
     </div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
+    <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+</div>
 
 <div id="luxembourgishFlag" class="flag">
     <div class="lured" style="width: 100%; height: 33.33%; float: top;"></div>
@@ -450,6 +475,11 @@
     <div class="nored" style="width: 84px; height: 42px; float: left;"></div>
 </div>
 
+<div id="palauanFlag" class="flag">
+    <div class="pablue" style="width: 100%; height: 100%;"></div>
+    <div class="pacircle" style="width: 54px; height: 54px; position: absolute; top: 18px; left: 36px;"></div>
+</div>
+
 <div id="polishFlag" class="flag">
     <div class="white" style="width: 100%; height: 50%; float: top;"></div>
     <div class="pored" style="width: 100%; height: 50%; float: top;"></div>
@@ -468,11 +498,11 @@
 </div>
 
 <div id="swedishFlag" class="flag">
-    <div class="swteal" style="width: 47.5px; height: 38px; float: left;"></div>
+    <div class="swteal" style="width: 46.75px; height: 38px; float: left;"></div>
     <div class="swyellow" style="width: 19px; height: 38px; float: left;"></div>
     <div class="swteal" style="width: 85.5px; height: 38px; float: left;"></div>
     <div class="swyellow" style="width: 152px; height: 19px; float: left;"></div>
-    <div class="swteal" style="width: 47.5px; height: 38px; float: left;"></div>
+    <div class="swteal" style="width: 46.75px; height: 38px; float: left;"></div>
     <div class="swyellow" style="width: 19px; height: 38px; float: left;"></div>
     <div class="swteal" style="width: 85.5px; height: 38px; float: left;"></div>
 </div>
@@ -497,71 +527,71 @@
 </div>
 
 <div id="americanFlag" class="flag">
-    <div class="blue">
-        <div class="usstar usstar-1"></div>
-        <div class="usstar usstar-2"></div>
-        <div class="usstar usstar-3"></div>
-        <div class="usstar usstar-4"></div>
-        <div class="usstar usstar-5"></div>
-        <div class="usstar usstar-6"></div>
-        <div class="usstar usstar-7"></div>
-        <div class="usstar usstar-8"></div>
-        <div class="usstar usstar-9"></div>
-        <div class="usstar usstar-10"></div>
-        <div class="usstar usstar-11"></div>
-        <div class="usstar usstar-12"></div>
-        <div class="usstar usstar-13"></div>
-        <div class="usstar usstar-14"></div>
-        <div class="usstar usstar-15"></div>
-        <div class="usstar usstar-16"></div>
-        <div class="usstar usstar-17"></div>
-        <div class="usstar usstar-18"></div>
-        <div class="usstar usstar-19"></div>
-        <div class="usstar usstar-20"></div>
-        <div class="usstar usstar-21"></div>
-        <div class="usstar usstar-22"></div>
-        <div class="usstar usstar-23"></div>
-        <div class="usstar usstar-24"></div>
-        <div class="usstar usstar-25"></div>
-        <div class="usstar usstar-26"></div>
-        <div class="usstar usstar-27"></div>
-        <div class="usstar usstar-28"></div>
-        <div class="usstar usstar-29"></div>
-        <div class="usstar usstar-30"></div>
-        <div class="usstar usstar-31"></div>
-        <div class="usstar usstar-32"></div>
-        <div class="usstar usstar-33"></div>
-        <div class="usstar usstar-34"></div>
-        <div class="usstar usstar-35"></div>
-        <div class="usstar usstar-36"></div>
-        <div class="usstar usstar-37"></div>
-        <div class="usstar usstar-38"></div>
-        <div class="usstar usstar-39"></div>
-        <div class="usstar usstar-40"></div>
-        <div class="usstar usstar-41"></div>
-        <div class="usstar usstar-42"></div>
-        <div class="usstar usstar-43"></div>
-        <div class="usstar usstar-44"></div>
-        <div class="usstar usstar-45"></div>
-        <div class="usstar usstar-46"></div>
-        <div class="usstar usstar-47"></div>
-        <div class="usstar usstar-48"></div>
-        <div class="usstar usstar-49"></div>
-        <div class="usstar usstar-50"></div>
-    </div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
-    <div class="stripe white"></div>
-    <div class="stripe red"></div>
+        <div class="usblue">
+            <div class="usstar usstar-1"></div>
+            <div class="usstar usstar-2"></div>
+            <div class="usstar usstar-3"></div>
+            <div class="usstar usstar-4"></div>
+            <div class="usstar usstar-5"></div>
+            <div class="usstar usstar-6"></div>
+            <div class="usstar usstar-7"></div>
+            <div class="usstar usstar-8"></div>
+            <div class="usstar usstar-9"></div>
+            <div class="usstar usstar-10"></div>
+            <div class="usstar usstar-11"></div>
+            <div class="usstar usstar-12"></div>
+            <div class="usstar usstar-13"></div>
+            <div class="usstar usstar-14"></div>
+            <div class="usstar usstar-15"></div>
+            <div class="usstar usstar-16"></div>
+            <div class="usstar usstar-17"></div>
+            <div class="usstar usstar-18"></div>
+            <div class="usstar usstar-19"></div>
+            <div class="usstar usstar-20"></div>
+            <div class="usstar usstar-21"></div>
+            <div class="usstar usstar-22"></div>
+            <div class="usstar usstar-23"></div>
+            <div class="usstar usstar-24"></div>
+            <div class="usstar usstar-25"></div>
+            <div class="usstar usstar-26"></div>
+            <div class="usstar usstar-27"></div>
+            <div class="usstar usstar-28"></div>
+            <div class="usstar usstar-29"></div>
+            <div class="usstar usstar-30"></div>
+            <div class="usstar usstar-31"></div>
+            <div class="usstar usstar-32"></div>
+            <div class="usstar usstar-33"></div>
+            <div class="usstar usstar-34"></div>
+            <div class="usstar usstar-35"></div>
+            <div class="usstar usstar-36"></div>
+            <div class="usstar usstar-37"></div>
+            <div class="usstar usstar-38"></div>
+            <div class="usstar usstar-39"></div>
+            <div class="usstar usstar-40"></div>
+            <div class="usstar usstar-41"></div>
+            <div class="usstar usstar-42"></div>
+            <div class="usstar usstar-43"></div>
+            <div class="usstar usstar-44"></div>
+            <div class="usstar usstar-45"></div>
+            <div class="usstar usstar-46"></div>
+            <div class="usstar usstar-47"></div>
+            <div class="usstar usstar-48"></div>
+            <div class="usstar usstar-49"></div>
+            <div class="usstar usstar-50"></div>
+        </div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 7.69230769%; float: top;"></div>
+    <div class="usred" style="width: 100%; height: 7.69230769%; float: top;"></div>
 </div>
 
 <div id="vietnameseFlag" class="flag">
@@ -578,6 +608,7 @@
 <script>
     const countrySelect = document.getElementById('countrySelect');
     const flags = {
+        afghanistan: document.getElementById('afghanFlag'),
         armenia: document.getElementById('armenianFlag'),
         austria: document.getElementById('austrianFlag'),
         bahamas: document.getElementById('bahamianFlag'),
@@ -586,9 +617,11 @@
         benin: document.getElementById('benineseFlag'),
         botswana: document.getElementById('batswanaFlag'),
         bulgaria: document.getElementById('bulgarianFlag'),
+        canada: document.getElementById('canadianFlag'),
         chad: document.getElementById('chadianFlag'),
         china: document.getElementById('chineseFlag'),
         colombia: document.getElementById('colombianFlag'),
+        rcongo: document.getElementById('rcongoleseFlag'),
         czechia: document.getElementById('czechFlag'),
         denmark: document.getElementById('danishFlag'),
         finland: document.getElementById('finnishFlag'),
@@ -601,6 +634,7 @@
         luxembourg: document.getElementById('luxembourgishFlag'),
         netherlands: document.getElementById('dutchFlag'),
         norway: document.getElementById('norwegianFlag'),
+        palau: document.getElementById('palauanFlag'),
         poland: document.getElementById('polishFlag'),
         russia: document.getElementById('russianFlag'),
         sierraLeone: document.getElementById('sierraLeoneanFlag'),
