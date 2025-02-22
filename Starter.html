@@ -13,6 +13,9 @@
         #afghanFlag { height: 100px; width: 150px; position: relative; }
         .white { background-color: #fff; }
 
+        #albanianFlag { height: 105px; width: 147px; position: relative; }
+        .alred { background-color: #e32119; }
+
         #austrianFlag { height: 100px; width: 150px;}
         .aured { background-color: #c8102e; }
 
@@ -74,6 +77,11 @@
         .coyellow { background-color: #fcd116; }
         .coblue { background-color: #003893; }
         .cored { background-color: #ce1126; }
+
+        #dcongoleseFlag { position: relative; height: 112.5px; width: 150px; overflow: hidden;}
+        .cklightblue { background-color: #00a3e0; }
+        .ckred { background-color: #ef3340; border: 3.062px solid #ffd100; width: 150px; height: 32px; position: absolute; top: 38px; left: -3.062px; z-index: 1; transform: skewY(-28deg); }
+        .ckstar { position: absolute; background-color: #ffd100; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 36.9px; height: 37px; top: 5px; left: 5.1px; }
 
         #rcongoleseFlag { position: relative; height: 100px; width: 150px; }
         .cbgreen { border-color: transparent #009543 transparent transparent; }
@@ -231,6 +239,7 @@
 <select id="countrySelect">
     <option value="">Select a country</option>
     <option value="afghanistan">Afghanistan</option>
+    <option value="albania">Albania</option>
     <option value="armenia">Armenia</option>
     <option value="austria">Austria</option>
     <option value="bahamas">Bahamas, The</option>
@@ -243,6 +252,7 @@
     <option value="chad">Chad</option>
     <option value="china">China</option>
     <option value="colombia">Colombia</option>
+    <option value="dcongo">Congo, Democratic Republic of the</option>
     <option value="rcongo">Congo, Republic of the</option>
     <option value="czechia">Czechia</option>
     <option value="denmark">Denmark</option>
@@ -271,6 +281,11 @@
 <div id="afghanFlag" class="flag">
     <div class="white" style="width: 100%; height: 100%;"></div>
     <img src="https://th.bing.com/th/id/OIP.oLM9W8qfD6XZ9TRY1eQ59gHaCS?w=349&h=108&c=7&r=0&o=5&pid=1.7" alt="Afghan symbol" style="width:130px; height:40px; position: absolute; top: 30px; left: 10px;">
+</div>
+
+<div id="albanianFlag" class="flag">
+    <div class="alred" style="width: 100%; height: 100%;"></div>
+    <img src="https://vectorseek.com/wp-content/uploads/2023/09/Albanian-Eagle-Flag-Of-Albania-Logo-Vector.svg-.png" alt="Albanian symbol" style="width:63px; height:72px; position: absolute; top: 17.5px; left: 42px;">
 </div>
 
 <div id="armenianFlag" class="flag">
@@ -349,6 +364,12 @@
     <div class="coyellow" style="width: 100%; height: 50%; float: top;"></div>
     <div class="coblue" style="width: 100%; height: 25%; float: top;"></div>
     <div class="cored" style="width: 100%; height: 25%; float: top;"></div>
+</div>
+
+<div id="dcongoleseFlag" class="flag">
+    <div class="cklightblue" style="width: 100%; height: 100%;"></div>
+    <div class="ckred"></div>
+    <div class="ckstar"></div>
 </div>
 
 <div id="rcongoleseFlag" class="flag">
@@ -609,6 +630,7 @@
     const countrySelect = document.getElementById('countrySelect');
     const flags = {
         afghanistan: document.getElementById('afghanFlag'),
+        albania: document.getElementById('albanianFlag'),
         armenia: document.getElementById('armenianFlag'),
         austria: document.getElementById('austrianFlag'),
         bahamas: document.getElementById('bahamianFlag'),
@@ -621,6 +643,7 @@
         chad: document.getElementById('chadianFlag'),
         china: document.getElementById('chineseFlag'),
         colombia: document.getElementById('colombianFlag'),
+        dcongo: document.getElementById('dcongoleseFlag'),
         rcongo: document.getElementById('rcongoleseFlag'),
         czechia: document.getElementById('czechFlag'),
         denmark: document.getElementById('danishFlag'),
