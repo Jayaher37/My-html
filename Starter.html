@@ -94,6 +94,9 @@
 
         #danishFlag { height: 112px; width: 148px;}
         .dnred { background-color: #c8102e; }
+        
+        #estonianFlag { height: 98px; width: 154px;}
+        .esblue { background-color: #0072ce; }
 
         #finnishFlag { height: 88px; width: 144px;}
         .fiblue { background-color: #18447e; }
@@ -117,6 +120,9 @@
         #japaneseFlag { height: 100px; width: 150px; position: relative; }
         .jpcircle { background-color: #bc002c; border-radius: 50%; }
         
+        #latvianFlag { height: 75px; width: 150px;}
+        .lared { background-color: #a4343a; }
+        
         #liberianFlag { height: 80px; width: 152px; position: relative; flex-direction: column; }
         .lired { background-color: #bf0a30; }
         .liblue { background-color: #002868; width: 36.36363636px; height: 36.36363636px; position: absolute; top: 0; left: 0; z-index: 1; }
@@ -131,7 +137,12 @@
         .listripe9 { top: 58.18181818px; }
         .listripe10 { top: 65.45454545px; }
         .listripe11 { top: 72.72727272px; }
-        .listar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 24px; height: 24px; top: 5.8px; left: 5.8px; }  
+        .listar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 24px; height: 24px; top: 5.8px; left: 5.8px; }
+        
+        #lithuanianFlag { height: 90px; width: 150px;}
+        .ltyellow { background-color: #ffb81c; }
+        .ltgreen { background-color: #046a38; }
+        .ltred { background-color: #be3a34; }
 
         #luxembourgishFlag { height: 90px; width: 150px;}
         .lured { background-color: #ea141d; }
@@ -256,13 +267,16 @@
     <option value="rcongo">Congo, Republic of the</option>
     <option value="czechia">Czechia</option>
     <option value="denmark">Denmark</option>
+    <option value="estonia">Estonia</option>
     <option value="finland">Finland</option>
     <option value="france">France</option>
     <option value="germany">Germany</option>
     <option value="iceland">Iceland</option>
     <option value="ireland">Ireland</option>
     <option value="japan">Japan</option>
+    <option value="latvia">Latvia</option>
     <option value="liberia">Liberia</option>
+    <option value="lithuania">Lithuania</option>
     <option value="luxembourg">Luxembourg</option>
     <option value="netherlands">Netherlands</option>
     <option value="norway">Norway</option>
@@ -394,6 +408,12 @@
     <div class="dnred" style="width: 84px; height: 48px; float: left;"></div>
 </div>
 
+<div id="estonianFlag" class="flag">
+    <div class="esblue" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
 <div id="finnishFlag" class="flag">
     <div class="white" style="width: 40px; height: 32px; float: left;"></div>
     <div class="fiblue" style="width: 24px; height: 32px; float: left;"></div>
@@ -447,6 +467,12 @@
     <div class="jpcircle" style="width: 60px; height: 60px; position: absolute; top: 20px; left: 45px;"></div>
 </div>
 
+<div id="latvianFlag" class="flag">
+    <div class="lared" style="width: 100%; height: 40%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 20%; float: top;"></div>
+    <div class="lared" style="width: 100%; height: 40%; float: top;"></div>
+</div>
+
 <div id="liberianFlag" class="flag">
     <div class="liblue">
         <div class="listar"></div>
@@ -462,6 +488,12 @@
     <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
     <div class="white" style="width: 100%; height: 9.09090909%; float: top;"></div>
     <div class="lired" style="width: 100%; height: 9.09090909%; float: top;"></div>
+</div>
+
+<div id="lithuanianFlag" class="flag">
+    <div class="ltyellow" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="ltgreen" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="ltred" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
 <div id="luxembourgishFlag" class="flag">
@@ -647,13 +679,16 @@
         rcongo: document.getElementById('rcongoleseFlag'),
         czechia: document.getElementById('czechFlag'),
         denmark: document.getElementById('danishFlag'),
+        estonia: document.getElementById('estonianFlag'),
         finland: document.getElementById('finnishFlag'),
         france: document.getElementById('frenchFlag'),
         germany: document.getElementById('germanFlag'),
         iceland: document.getElementById('icelandicFlag'),
         ireland: document.getElementById('irishFlag'),
         japan: document.getElementById('japaneseFlag'),
+        latvia: document.getElementById('latvianFlag'),
         liberia: document.getElementById('liberianFlag'),
+        lithuania: document.getElementById('lithuanianFlag'),
         luxembourg: document.getElementById('luxembourgishFlag'),
         netherlands: document.getElementById('dutchFlag'),
         norway: document.getElementById('norwegianFlag'),
