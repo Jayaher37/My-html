@@ -9,11 +9,13 @@
         .flag {
             display: none;
             border: 1px solid #000;
+            top: 6px;
+            position: relative;
         }
-        #afghanFlag { height: 100px; width: 150px; position: relative; }
+        #afghanFlag { height: 100px; width: 150px; }
         .white { background-color: #fff; }
 
-        #albanianFlag { height: 105px; width: 147px; position: relative; }
+        #albanianFlag { height: 105px; width: 147px; }
         .alred { background-color: #e32119; }
 
         #austrianFlag { height: 100px; width: 150px;}
@@ -28,12 +30,12 @@
         .white { background-color: #fff; }
         .aured { background-color: #c8102e; }
 
-        #bahamianFlag { position: relative; height: 75px; width: 150px; }
+        #bahamianFlag { height: 75px; width: 150px; }
         .bateal { background-color: #00778b; }
         .bayellow { background-color: #ffc72c; }
         .batriangle { border-color: transparent #000000 transparent transparent; }
 
-        #bangladeshiFlag { height: 90px; width: 150px; position: relative; }
+        #bangladeshiFlag { height: 90px; width: 150px; }
         .bngreen { background-color: #006a4e; }
         .bncircle { background-color: #f42a41; border-radius: 50%; }
 
@@ -54,7 +56,7 @@
         .bugreen { background-color: #00966e; }
         .bured { background-color: #d62612; }
 
-        #canadianFlag { height: 75px; width: 150px; position: relative; }
+        #canadianFlag { height: 75px; width: 150px; }
         .cared { background-color: #f00; }
 
         #chadianFlag { height: 100px; width: 150px;}
@@ -62,7 +64,7 @@
         .cdyellow { background-color: #fecb00; }
         .cdred { background-color: #c60c30; }
 
-        #chineseFlag { height: 100px; width: 150px; position: relative;}
+        #chineseFlag { height: 100px; width: 150px; }
         .cired { background-color: #da251d; }
         .cistar { position: absolute; background-color: #ffcd00; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); }
         .cistar-large { width: 24px; height: 24px; }
@@ -78,17 +80,17 @@
         .coblue { background-color: #003893; }
         .cored { background-color: #ce1126; }
 
-        #dcongoleseFlag { position: relative; height: 112.5px; width: 150px; overflow: hidden;}
+        #dcongoleseFlag { height: 112.5px; width: 150px; overflow: hidden;}
         .cklightblue { background-color: #00a3e0; }
         .ckred { background-color: #ef3340; border: 3.062px solid #ffd100; width: 150px; height: 32px; position: absolute; top: 38px; left: -3.062px; z-index: 1; transform: skewY(-28deg); }
         .ckstar { position: absolute; background-color: #ffd100; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 36.9px; height: 37px; top: 5px; left: 5.1px; }
 
-        #rcongoleseFlag { position: relative; height: 100px; width: 150px; }
+        #rcongoleseFlag { height: 100px; width: 150px; }
         .cbgreen { border-color: transparent #009543 transparent transparent; }
         .cbred { border-color: transparent #dc241f transparent transparent; }
         .cbyellow { background-color: #fbde4a; width: 50px; height: 100px; position: absolute; top: 0px; left: 50px; z-index: 1; transform: skew(-45deg); }
 
-        #czechFlag { position: relative; height: 100px; width: 150px; }
+        #czechFlag { height: 100px; width: 150px; }
         .czred { background-color: #e2003d; }
         .cztriangle { border-color: transparent #11457e transparent transparent; }
 
@@ -109,13 +111,24 @@
         .gered { background-color: #dd0000;}
         .geyellow { background-color: #fc0; }
         
+        #hungarianFlag { height: 75px; width: 150px;}
+        .hured { background-color: #ce2939; }
+        .hugreen { background-color: #477050; }
+        
         #icelandicFlag { height: 108px; width: 150px;}
         .icblue { background-color: #02529c; }
         .icred { background-color: #dc1e35; }
+        
+        #indonesianFlag { height: 100px; width: 150px;}
+        .inred { background-color: #f00;}
 
         #irishFlag { height: 75px; width: 150px;}
         .irgreen { background-color: #169B62; }
         .irorange { background-color: #ff883e; }
+        
+        #italianFlag { height: 100px; width: 150px;}
+        .itgreen { background-color: #008c45; }
+        .itred { background-color: #cd212a; }
 
         #japaneseFlag { height: 100px; width: 150px; position: relative; }
         .jpcircle { background-color: #bc002c; border-radius: 50%; }
@@ -123,7 +136,7 @@
         #latvianFlag { height: 75px; width: 150px;}
         .lared { background-color: #a4343a; }
         
-        #liberianFlag { height: 80px; width: 152px; position: relative; flex-direction: column; }
+        #liberianFlag { height: 80px; width: 152px; flex-direction: column; }
         .lired { background-color: #bf0a30; }
         .liblue { background-color: #002868; width: 36.36363636px; height: 36.36363636px; position: absolute; top: 0; left: 0; z-index: 1; }
         .listripe1 { top: 0; }
@@ -147,6 +160,9 @@
         #luxembourgishFlag { height: 90px; width: 150px;}
         .lured { background-color: #ea141d; }
         .lulightblue { background-color: #51adda; }
+        
+        #monegasqueFlag { height: 120px; width: 150px;}
+        .mored { background-color: #ce1126;}
 
         #dutchFlag { height: 100px; width: 150px;}
         .nered { background-color: #ae1c28; }
@@ -156,7 +172,7 @@
         .nored { background-color: #ba0c2f; }
         .noblue { background-color: #00205b; }
 
-        #palauanFlag { height: 90px; width: 144px; position: absolute; }
+        #palauanFlag { height: 90px; width: 144px; }
         .pablue { background-color: #09f; }
         .pacircle { background-color: #ff0; border-radius: 50%; }
 
@@ -182,7 +198,7 @@
         .ukblue { background-color: #0056b9; }
         .ukyellow { background-color: #ffcd00; }
 
-        #americanFlag { height: 80px; width: 152px; position: relative; flex-direction: column; }
+        #americanFlag { height: 80px; width: 152px; flex-direction: column; }
         .usred { background-color: #b31942; }
         .usblue { background-color: #3b3b6d; width: 60.8px; height: 43.07692307692308px; position: absolute; top: 0; left: 0; z-index: 1; }
         .usstar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 4.92307692308px; height: 4.92307692308px; }  
@@ -237,7 +253,7 @@
         .usstar-49 { top: 35px; left: 41px; }
         .usstar-50 { top: 35px; left: 50px; }
 
-        #vietnameseFlag { height: 100px; width: 150px; position: relative;}
+        #vietnameseFlag { height: 100px; width: 150px; }
         .vtred { background-color: #da251d; }
         .vtstar { position: absolute; background-color: #ffcd00; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 60px; height: 60px; top: 20px; left: 45px; }
         
@@ -271,13 +287,17 @@
     <option value="finland">Finland</option>
     <option value="france">France</option>
     <option value="germany">Germany</option>
+    <option value="hungary">Hungary</option>
     <option value="iceland">Iceland</option>
+    <option value="indonesia">Indonesia</option>
     <option value="ireland">Ireland</option>
+    <option value="italy">Italy</option>
     <option value="japan">Japan</option>
     <option value="latvia">Latvia</option>
     <option value="liberia">Liberia</option>
     <option value="lithuania">Lithuania</option>
     <option value="luxembourg">Luxembourg</option>
+    <option value="monaco">Monaco</option>
     <option value="netherlands">Netherlands</option>
     <option value="norway">Norway</option>
     <option value="palau">Palau</option>
@@ -436,6 +456,12 @@
     <div class="geyellow" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
+<div id="hungarianFlag" class="flag">
+    <div class="hured" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+    <div class="hugreen" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
 <div id="icelandicFlag" class="flag">
     <div class="icblue" style="width: 42px; height: 42px; float: left;"></div>
     <div class="white" style="width: 6px; height: 42px; float: left;"></div>
@@ -456,10 +482,21 @@
     <div class="icblue" style="width: 84px; height: 42px; float: left;"></div>
 </div>
 
+<div id="indonesianFlag" class="flag">
+    <div class="inred" style="width: 100%; height: 50%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 50%; float: top;"></div>
+</div>
+
 <div id="irishFlag" class="flag">
     <div class="irgreen" style="width: 33.33%; height: 100%; float: left;"></div>
     <div class="white" style="width: 33.33%; height: 100%; float: left;"></div>
     <div class="irorange" style="width: 33.33%; height: 100%; float: left;"></div>
+</div>
+
+<div id="italianFlag" class="flag">
+    <div class="itgreen" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="white" style="width: 33.33%; height: 100%; float: left;"></div>
+    <div class="itred" style="width: 33.33%; height: 100%; float: left;"></div>
 </div>
 
 <div id="japaneseFlag" class="flag">
@@ -500,6 +537,11 @@
     <div class="lured" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="lulightblue" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="monegasqueFlag" class="flag">
+    <div class="mored" style="width: 100%; height: 50%; float: top;"></div>
+    <div class="white" style="width: 100%; height: 50%; float: top;"></div>
 </div>
 
 <div id="dutchFlag" class="flag">
@@ -683,13 +725,17 @@
         finland: document.getElementById('finnishFlag'),
         france: document.getElementById('frenchFlag'),
         germany: document.getElementById('germanFlag'),
+        hungary: document.getElementById('hungarianFlag'),
         iceland: document.getElementById('icelandicFlag'),
+        indonesia: document.getElementById('indonesianFlag'),
         ireland: document.getElementById('irishFlag'),
+        italy: document.getElementById('italianFlag'),
         japan: document.getElementById('japaneseFlag'),
         latvia: document.getElementById('latvianFlag'),
         liberia: document.getElementById('liberianFlag'),
         lithuania: document.getElementById('lithuanianFlag'),
         luxembourg: document.getElementById('luxembourgishFlag'),
+        monaco: document.getElementById('monegasqueFlag'),
         netherlands: document.getElementById('dutchFlag'),
         norway: document.getElementById('norwegianFlag'),
         palau: document.getElementById('palauanFlag'),
