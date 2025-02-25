@@ -11,6 +11,7 @@
             border: 1px solid #000;
             top: 6px;
             position: relative;
+            overflow: hidden;
         }
         #afghanFlag { height: 100px; width: 150px; }
         .white { background-color: #fff; }
@@ -39,7 +40,7 @@
         .bngreen { background-color: #006a4e; }
         .bncircle { background-color: #f42a41; border-radius: 50%; }
 
-        #belgianFlag { height: 130px; width: 150px;}
+        #belgianFlag { height: 130px; width: 148px;}
         .black { background-color: #000; }
         .beyellow { background-color: #fdda24; }
         .bered { background-color: #ef333f; }
@@ -99,6 +100,10 @@
         
         #estonianFlag { height: 98px; width: 154px;}
         .esblue { background-color: #0072ce; }
+
+        #faroeseFlag { height: 112px; width: 154px;}
+        .fared { background-color: #ee2436; }
+        .fablue { background-color: #0165bf; }
 
         #finnishFlag { height: 88px; width: 144px;}
         .fiblue { background-color: #18447e; }
@@ -164,6 +169,12 @@
         #monegasqueFlag { height: 120px; width: 150px;}
         .mored { background-color: #ce1126;}
 
+        #moroccanFlag { height: 100px; width: 150px; }
+        .mcred { background-color: #cd0039; }
+        .mcstar { position: absolute; background-color: #4c8f22; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 60px; height: 60px; top: 20px; left: 45px; }
+        .mcpentagon { position: absolute; background-color: #cd0039; clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); width: 20px; height: 20px; top: 44px; left: 65px; transform: rotate(180deg);}
+        .mctriangle { border-color: transparent #cd0039 transparent transparent; }
+
         #dutchFlag { height: 100px; width: 150px;}
         .nered { background-color: #ae1c28; }
         .neblue { background-color: #2146ab; }
@@ -186,6 +197,10 @@
         #sierraLeoneanFlag { height: 100px; width: 150px;}
         .sigreen { background-color: #1eb53a; }
         .siblue { background-color: #0072c6; }
+
+        #spanishFlag { height: 100px; width: 150px;}
+        .spred { background-color: #c60b1e; }
+        .spyellow { background-color: #ffc400; }
 
         #swedishFlag { height: 95px; width: 152px;}
         .swteal { background-color: #005293; }
@@ -259,6 +274,13 @@
         
         #yemeniFlag { height: 100px; width: 150px;}
         .yered { background-color: #ce1126;}
+
+        #zimbabweanFlag { height: 75px; width: 150px;}
+        .zitriangle1 { border-color: transparent #000 transparent transparent; }
+        .zitriangle2 { border-color: transparent #fff transparent transparent; }
+        .zigreen { background-color: #008b45; }
+        .ziyellow { background-color: #ffed00; }
+        .zired { background-color: #e41f1b; }
     </style>
 </head>
 <body>
@@ -284,6 +306,7 @@
     <option value="czechia">Czechia</option>
     <option value="denmark">Denmark</option>
     <option value="estonia">Estonia</option>
+    <option value="faroe">Faroe Islands</option>
     <option value="finland">Finland</option>
     <option value="france">France</option>
     <option value="germany">Germany</option>
@@ -298,18 +321,21 @@
     <option value="lithuania">Lithuania</option>
     <option value="luxembourg">Luxembourg</option>
     <option value="monaco">Monaco</option>
+    <option value="morocco">Morocco</option>
     <option value="netherlands">Netherlands</option>
     <option value="norway">Norway</option>
     <option value="palau">Palau</option>
     <option value="poland">Poland</option>
     <option value="russia">Russia</option>
     <option value="sierraLeone">Sierra Leone</option>
+    <option value="spain">Spain</option>
     <option value="sweden">Sweden</option>
     <option value="switzerland">Switzerland</option>
     <option value="ukraine">Ukraine</option>
     <option value="america">United States</option>
     <option value="vietnam">Vietnam</option>
     <option value="yemen">Yemen</option>
+    <option value="zimbabwe">Zimbabwe</option>
 </select>
 
 <div id="afghanFlag" class="flag">
@@ -319,7 +345,7 @@
 
 <div id="albanianFlag" class="flag">
     <div class="alred" style="width: 100%; height: 100%;"></div>
-    <img src="https://vectorseek.com/wp-content/uploads/2023/09/Albanian-Eagle-Flag-Of-Albania-Logo-Vector.svg-.png" alt="Albanian symbol" style="width:63px; height:72px; position: absolute; top: 17.5px; left: 42px;">
+    <img src="https://vectorseek.com/wp-content/uploads/2023/09/Albanian-Eagle-Flag-Of-Albania-Logo-Vector.svg-.png" alt="Albanian symbol" style="width:75px; height:70px; position: absolute; top: 17.5px; left: 36px;">
 </div>
 
 <div id="armenianFlag" class="flag">
@@ -338,7 +364,7 @@
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
     <div class="bayellow" style="width: 100%; height: 33.33%;"></div>
     <div class="bateal" style="width: 100%; height: 33.33%;"></div>
-    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 36.75px 64.592px 36.75px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="batriangle" style="width: 0; height: 0; border-style: solid; border-width: 38.5px 64.95191px 38.5px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1);"></div>
 </div>
 
 <div id="bangladeshiFlag" class="flag">
@@ -407,15 +433,15 @@
 </div>
 
 <div id="rcongoleseFlag" class="flag">
-    <div class="cbgreen" style="width: 0; height: 0; border-style: solid; border-width: 0px 150px 100px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
-    <div class="cbred" style="width: 0; height: 0; border-style: solid; border-width: 100px 150px 0px 0; position: absolute; top: 0; left: 0; transform-origin: 2 50%;"></div>
+    <div class="cbgreen" style="width: 0; height: 0; border-style: solid; border-width: 0px 150px 100px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1);"></div>
+    <div class="cbred" style="width: 0; height: 0; border-style: solid; border-width: 100px 150px 0px 0; position: absolute; top: 0; left: 0;"></div>
     <div class="cbyellow"></div>
 </div>
 
 <div id="czechFlag" class="flag">
     <div class="white" style="width: 100%; height: 50%;"></div>
     <div class="czred" style="width: 100%; height: 50%;"></div>
-    <div class="cztriangle" style="width: 0; height: 0; border-style: solid; border-width: 50px 75px 50px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); transform-origin: 2 50%;"></div>
+    <div class="cztriangle" style="width: 0; height: 0; border-style: solid; border-width: 51px 75px 51px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1);"></div>
 </div>
 
 <div id="danishFlag" class="flag">
@@ -432,6 +458,26 @@
     <div class="esblue" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="faroeseFlag" class="flag">
+    <div class="white" style="width: 42px; height: 42px; float: left;"></div>
+    <div class="fablue" style="width: 7px; height: 42px; float: left;"></div>
+    <div class="fared" style="width: 14px; height: 42px; float: left;"></div>
+    <div class="fablue" style="width: 7px; height: 42px; float: left;"></div>
+    <div class="white" style="width: 84px; height: 42px; float: left;"></div>
+    <div class="fablue" style="width: 49px; height: 7px; float: left;"></div>
+    <div class="fared" style="width: 14px; height: 7px; float: left;"></div>
+    <div class="fablue" style="width: 91px; height: 7px; float: left;"></div>
+    <div class="fared" style="width: 154px; height: 14px; float: left;"></div>
+    <div class="fablue" style="width: 49px; height: 7px; float: left;"></div>
+    <div class="fared" style="width: 14px; height: 7px; float: left;"></div>
+    <div class="fablue" style="width: 91px; height: 7px; float: left;"></div>
+    <div class="white" style="width: 42px; height: 42px; float: left;"></div>
+    <div class="fablue" style="width: 7px; height: 42px; float: left;"></div>
+    <div class="fared" style="width: 14px; height: 42px; float: left;"></div>
+    <div class="fablue" style="width: 7px; height: 42px; float: left;"></div>
+    <div class="white" style="width: 84px; height: 42px; float: left;"></div>
 </div>
 
 <div id="finnishFlag" class="flag">
@@ -544,6 +590,13 @@
     <div class="white" style="width: 100%; height: 50%; float: top;"></div>
 </div>
 
+<div id="moroccanFlag" class="flag">
+    <div class="mcred" style="width: 100%; height: 100%;"></div>
+    <div class="mcstar"></div>
+    <div class="mcpentagon"></div>
+    <div class="mctriangle" style="width: 0; height: 0; border-style: solid; border-width: 5px 20px 5px 0; position: absolute; top: 23px; left: 66px; transform: rotate(90deg);"></div>
+</div>
+
 <div id="dutchFlag" class="flag">
     <div class="nered" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
@@ -590,6 +643,14 @@
     <div class="sigreen" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="white" style="width: 100%; height: 33.33%; float: top;"></div>
     <div class="siblue" style="width: 100%; height: 33.33%; float: top;"></div>
+</div>
+
+<div id="spanishFlag" class="flag">
+    <div class="spred" style="width: 100%; height: 25%; float: top;"></div>
+    <div class="spyellow" style="width: 100%; height: 50%; float: top;"></div>
+    <div class="spred" style="width: 100%; height: 25%; float: top;"></div>
+    <img src="https://logodix.com/logo/1689871.png" alt="Spanish symbol" style="width:26.66%; height:40%; position: absolute; top: 30%; left: 20%;">
+
 </div>
 
 <div id="swedishFlag" class="flag">
@@ -700,6 +761,21 @@
     <div class="black" style="width: 100%; height: 33.33%; float: top;"></div>
 </div>
 
+<div id="zimbabweanFlag" class="flag">
+    <div class="black" style="width: 3.5px; height: 75px; position: absolute;"></div>
+    <div class="zitriangle1" style="width: 0; height: 0; border-style: solid; border-width: 38.5px 50px 38.5px 0; position: absolute; top: 0; left: 3.5px; transform: scaleX(-1);"></div>
+    <div class="zitriangle2" style="width: 0; height: 0; border-style: solid; border-width: 38.5px 50px 38.5px 0; position: absolute; top: 0; left: 0; transform: scaleX(-1); object-fit: cover;">
+        <img src="https://th.bing.com/th/id/OIP.LE97FXNUjMLIKX7m84w8UQAAAA?w=315&h=189&c=7&r=0&o=5&pid=1.7" alt="Zimbabwean symbol" style="width: 47px; height: 28.4px; position: absolute; top: -16px; left: 1px; transform: scaleX(-1);">
+    </div>
+    <div class="zigreen" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="ziyellow" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="zired" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="black" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="zired" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="ziyellow" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+    <div class="zigreen" style="width: 100%; height: 14.285714285714%; float: top;"></div>
+</div>
+
 <script>
     const countrySelect = document.getElementById('countrySelect');
     const flags = {
@@ -722,6 +798,7 @@
         czechia: document.getElementById('czechFlag'),
         denmark: document.getElementById('danishFlag'),
         estonia: document.getElementById('estonianFlag'),
+        faroe: document.getElementById('faroeseFlag'),
         finland: document.getElementById('finnishFlag'),
         france: document.getElementById('frenchFlag'),
         germany: document.getElementById('germanFlag'),
@@ -736,18 +813,21 @@
         lithuania: document.getElementById('lithuanianFlag'),
         luxembourg: document.getElementById('luxembourgishFlag'),
         monaco: document.getElementById('monegasqueFlag'),
+        morocco: document.getElementById('moroccanFlag'),
         netherlands: document.getElementById('dutchFlag'),
         norway: document.getElementById('norwegianFlag'),
         palau: document.getElementById('palauanFlag'),
         poland: document.getElementById('polishFlag'),
         russia: document.getElementById('russianFlag'),
         sierraLeone: document.getElementById('sierraLeoneanFlag'),
+        spain: document.getElementById('spanishFlag'),
         sweden: document.getElementById('swedishFlag'),
         switzerland: document.getElementById('swissFlag'),
         ukraine: document.getElementById('ukrainianFlag'),
         america: document.getElementById('americanFlag'),
         vietnam: document.getElementById('vietnameseFlag'),
-        yemen: document.getElementById('yemeniFlag')
+        yemen: document.getElementById('yemeniFlag'),
+        zimbabwe: document.getElementById('zimbabweanFlag')
     };
 
     countrySelect.addEventListener('change', function() {
