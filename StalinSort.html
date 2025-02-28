@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stalin Sort</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .blink {
+            animation: blinker 3s linear infinite;
+            color: #800;
+            font-size: 1.5em;
+            /* Larger, responsive font size */
+            margin-bottom: 20px;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        input, button {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="blink">Stalin Sort (Сортировка Сталина)</h1>
+    <img src="https://th.bing.com/th/id/OIP.HgJJO80X6M0ENEWXJHjkPQHaJm?rs=1&pid=ImgDetMain" alt="Joseph Stalin" width="175" height="227">
+    <form id="arrayForm">
+        <label for="arrayInput">Enter an array (comma-separated):</label><br>
+        <input type="text" id="arrayInput" name="arrayInput" required><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Sorted Array:</h2>
+    <p id="sortedArray"></p>
+
+    <script>
+        document.getElementById('arrayForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const input = document.getElementById('arrayInput').value;
+            const array = input.split(',').map(Number);
+            const sortedArray = stalinSort(array);
+            document.getElementById('sortedArray').textContent = sortedArray.join(', ');
+        });
+
+        function stalinSort(arr) {
+            if (arr.length === 0) return [];
+            let max = arr[0];
+            return arr.filter(num => {
+                if (num >= max) {
+                    max = num;
+                    return true;
+                }
+                return false;
+            });
+        }
+    </script>
+</body>
+</html>
