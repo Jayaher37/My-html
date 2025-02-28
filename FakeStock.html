@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Stock Market</title>
+    <style>
+    .body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .stock {
+        margin: 10px 0;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fake Stock Market</h1>
+        <div id="stocks">
+            <div class="stock" style="position: absolute; top: 20%; left: 41.5%">
+                <h2>Inflation Rate</h2>
+                <p>$<span id="inflation">0.02</span>/month</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 40%; left: 10%">
+                <h2>Stock of Flour</h2>
+                <p>Price: $<span id="priceA">1.32</span>/2lbs</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 40%; left: 41.5%">
+                <h2>Stock of Bread</h2>
+                <p>Price: $<span id="priceB">1.42</span>/loaf</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 40%; left: 73%">
+                <h2>Stock of Beef</h2>
+                <p>Price: $<span id="priceC">5.93</span>/lb</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 60%; left: 10%;">
+                <h2>Stock of Chicken</h2>
+                <p>Price: $<span id="priceD">2.47</span>/lb</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 60%; left: 41.5%;">
+                <h2>Stock of Potato</h2>
+                <p>Price: $<span id="priceE">2.30</span>/14.5oz can</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 60%; left: 73%;">
+                <h2>Stock of Lettuce</h2>
+                <p>Price: $<span id="priceF">1.14</span>/heart</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 80%; left: 10%;">
+                <h2>Stock of Banana</h2>
+                <p>Price: $<span id="priceG">0.50</span>/lb</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 80%; left: 41.5%;">
+                <h2>Stock of Apple</h2>
+                <p>Price: $<span id="priceH">1.37</span>/lb</p>
+            </div>
+            <div class="stock" style="position: absolute; top: 80%; left: 73%;">
+                <h2>Stock of Vegetable Oil</h2>
+                <p>Price: $<span id="priceI">2.97</span>/16fl oz</p>
+            </div>
+        </div>
+        <button id="simulate">Simulate Random Event</button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('simulate').addEventListener('click', simulateEvent);
+
+function simulateEvent() {
+    const stocks = ['inflation', 'priceA', 'priceB', 'priceC', 'priceD', 'priceE', 'priceF', 'priceG', 'priceH', 'priceI'];
+    stocks.forEach(stock => {
+        let currentPrice = parseFloat(document.getElementById(stock).innerText);
+        let change = (Math.random() * 0.5 - 0.1).toFixed(2); // Random change between -10 and +10
+        let newPrice = (currentPrice + parseFloat(change)).toFixed(2);
+        document.getElementById(stock).innerText = newPrice;
+    });
+}
+</script>
