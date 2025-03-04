@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2x2 Rubik's Cube</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  .cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    cursor: grab;
+  }
+  .corner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    display: flex;
+  }
+  .corner div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .corner .front  { background: red;    transform: rotateY(  0deg) translateZ(50px); }
+  .corner .back   { background: orange; transform: rotateY(180deg) translateZ(50px); }
+  .corner .right  { background: blue;   transform: rotateY( 90deg) translateZ(50px); }
+  .corner .left   { background: green;  transform: rotateY(-90deg) translateZ(50px); }
+  .corner .top    { background: white;  transform: rotateX( 90deg) translateZ(50px); }
+  .corner .bottom { background: yellow; transform: rotateX(-90deg) translateZ(50px); }
+  .corner1 { transform: translate3d(50px, -50px, 50px); }
+  .corner2 { transform: translate3d(-50px, -50px, 50px); }
+  .corner3 { transform: translate3d(50px,  -50px, -50px); }
+  .corner4 { transform: translate3d(-50px,  -50px, -50px); }
+  .corner5 { transform: translate3d(50px, 50px, 50px); }
+  .corner6 { transform: translate3d(-50px, 50px, 50px); }
+  .corner7 { transform: translate3d(50px,  50px, -50px); }
+  .corner8 { transform: translate3d(-50px,  50px, -50px); }
+</style>
+</head>
+<body>
+<div class="cube" id="cube">
+  <div class="corner corner1">
+    <div class="front"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+  </div>
+  <div class="corner corner2">
+    <div class="front"></div>
+    <div class="left"></div>
+    <div class="top"></div>
+  </div>
+  <div class="corner corner3">
+    <div class="back"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+  </div>
+  <div class="corner corner4">
+    <div class="back"></div>
+    <div class="left"></div>
+    <div class="top"></div>
+  </div>
+  <div class="corner corner5">
+    <div class="front"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="corner corner6">
+    <div class="front"></div>
+    <div class="left"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="corner corner7">
+    <div class="back"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="corner corner8">
+    <div class="back"></div>
+    <div class="left"></div>
+    <div class="bottom"></div>
+  </div>
+</div>
+<script>
+  const cube = document.getElementById('cube');
+  let isDragging = false;
+  let startX, startY;
+  let rotationX = -30;
+  let rotationY = -45;
+
+  document.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    cube.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      rotationX += dy * 0.5;
+      rotationY += dx * 0.5;
+      cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+      startX = e.clientX;
+      startY = e.clientY;
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    cube.style.cursor = 'grab';
+  });
+
+  document.querySelectorAll('.corner').forEach(corner => {
+    corner.addEventListener('mousedown', (e) => {
+      e.stopPropagation();
+      isDragging = false;
+      rotateCorner(corner);
+    });
+  });
+
+  const rotateCorner = (corner) => {
+    const currentRotation = corner.style.transform.match(/rotate[XYZ]\((\d+)deg\)/);
+    const angle = currentRotation ? parseInt(currentRotation[1]) : 0;
+    const newAngle = (angle + 90) % 360;
+    corner.style.transform = `rotateZ(${newAngle}deg) ` + corner.style.transform.replace(/rotate[XYZ]\(\d+deg\)/, '').trim();
+  }
+</script>
+</body>
+</html>
