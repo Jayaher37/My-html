@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,14 @@
             position: relative;
             overflow: hidden;
         }
-        #alabamanFlag { height: 100px; width: 150px; flex-direction: column; background-color: #fff; }
+
+        #alabamanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
         #alabamanFlag::before {
             content: '';
             position: absolute;
@@ -23,72 +31,135 @@
             height: 100%;
             background-color: #fff;
             background-image:
-            /* Diagonal Red */
-            linear-gradient(33.69deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%),
-            linear-gradient(-33.69deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%);
+                /* Diagonal Red */
+                linear-gradient(33.69deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%),
+                linear-gradient(-33.69deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%);
         }
 
-        #alaskanFlag { height: 100px; width: 141.6px; }
-        .akblue { background-color: #0f204B; }
-        .akstar { position: absolute; background-color: #ffcd00; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); }
-        .akstar-large { width: 10.4px; height: 10.4px; }
-        .akstar-small { width: 6.2px; height: 6.2px; }
-        .akstar-large-1 { top: 13px; left: 110.6px; }
-        .akstar-small-1 { top: 36.5px; left: 19.8px; }
-        .akstar-small-2 { top: 42.7px; left: 36.5px; }
-        .akstar-small-3 { top: 51.6px; left: 44.8px; }
-        .akstar-small-4 { top: 60.9px; left: 53.2px; }
-        .akstar-small-5 { top: 74px; left: 52.1px; }
-        .akstar-small-6 { top: 80.2px; left: 70.9px; }
-        .akstar-small-7 { top: 69.8px; left: 78.2px; }
-
-        #arizonaFlag {
-        /* Dimensions (2:3 ratio) */
-        width: 150px;
-        height: 100px;
-        position: relative;
-        background-color: #002868; /* Liberty Blue */
-        overflow: hidden;
+        #alaskanFlag {
+            height: 100px;
+            width: 141.6px;
         }
+
+        .akblue {
+            background-color: #0f204B;
+        }
+
+        .akstar {
+            position: absolute;
+            background-color: #ffcd00;
+            clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%);
+        }
+
+        .akstar-large {
+            width: 10.4px;
+            height: 10.4px;
+        }
+
+        .akstar-small {
+            width: 6.2px;
+            height: 6.2px;
+        }
+
+        .akstar-large-1 {
+            top: 13px;
+            left: 110.6px;
+        }
+
+        .akstar-small-1 {
+            top: 36.5px;
+            left: 19.8px;
+        }
+
+        .akstar-small-2 {
+            top: 42.7px;
+            left: 36.5px;
+        }
+
+        .akstar-small-3 {
+            top: 51.6px;
+            left: 44.8px;
+        }
+
+        .akstar-small-4 {
+            top: 60.9px;
+            left: 53.2px;
+        }
+
+        .akstar-small-5 {
+            top: 74px;
+            left: 52.1px;
+        }
+
+        .akstar-small-6 {
+            top: 80.2px;
+            left: 70.9px;
+        }
+
+        .akstar-small-7 {
+            top: 69.8px;
+            left: 78.2px;
+        }
+
+        #arizonanFlag {
+            /* Dimensions (2:3 ratio) */
+            width: 150px;
+            height: 100px;
+            position: relative;
+            background-color: #002868;
+            /* Liberty Blue */
+            overflow: hidden;
+        }
+
         /* 13 Rays (Red and Gold) */
-        #arizonaFlag::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* Starting from 270deg (left side) and spanning 180deg */
-        background: conic-gradient(
-            from 270deg at 50% 50%,
-            #bf0a30 0% 3.895%,   /* Red */
-            #ffcd00 3.895% 7.69%, /* Gold */
-            #bf0a30 7.69% 11.585%,
-            #ffcd00 11.585% 15.38%,
-            #bf0a30 15.38% 19.275%,
-            #ffcd00 19.275% 23.07%,
-            #bf0a30 23.07% 26.965%,
-            #ffcd00 26.965% 30.76%,
-            #bf0a30 30.76% 34.655%,
-            #ffcd00 34.655% 38.45%,
-            #bf0a30 38.45% 42.345%,
-            #ffcd00 42.345% 46.14%,
-            #bf0a30 46.14% 50%
-        );
-        /* Clip to only show rays on the top half */
-        clip-path: inset(0 0 50% 0);
+        #arizonanFlag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Starting from 270deg (left side) and spanning 180deg */
+            background: conic-gradient(from 270deg at 50% 50%,
+                    #bf0a30 0% 3.895%,
+                    /* Red */
+                    #ffcd00 3.895% 7.69%,
+                    /* Gold */
+                    #bf0a30 7.69% 11.585%,
+                    #ffcd00 11.585% 15.38%,
+                    #bf0a30 15.38% 19.275%,
+                    #ffcd00 19.275% 23.07%,
+                    #bf0a30 23.07% 26.965%,
+                    #ffcd00 26.965% 30.76%,
+                    #bf0a30 30.76% 34.655%,
+                    #ffcd00 34.655% 38.45%,
+                    #bf0a30 38.45% 42.345%,
+                    #ffcd00 42.345% 46.14%,
+                    #bf0a30 46.14% 50%);
+            /* Clip to only show rays on the top half */
+            clip-path: inset(0 0 50% 0);
         }
+
         /* Copper Star */
-        #arizonaFlag::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 50px; /* Star size */
-        height: 50px;
-        background-color: #b95d28; /* Copper */
-        transform: translate(-50%, -50%);
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        #arizonanFlag::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            /* Star size */
+            height: 50px;
+            background-color: #b95d28;
+            /* Copper */
+            transform: translate(-50%, -50%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        #californianFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-color: #fff;
         }
 
         #coloradoFlag {
@@ -96,13 +167,10 @@
             width: 150px;
             height: 100px;
             position: relative;
-            /* Three horizontal stripes of equal width: Blue-White-Blue */
-            background: linear-gradient(
-                to bottom,
-                #002868 0% 33.33%,    /* Top Blue */
-                #ffffff 33.33% 66.66%, /* Middle White */
-                #002868 66.66% 100%    /* Bottom Blue */
-            );
+            background: linear-gradient(to bottom,
+                    #002868 33.33%,
+                    #ffffff 33.33% 66.66%,
+                    #002868 66.66%);
             overflow: hidden;
         }
 
@@ -110,17 +178,22 @@
         #coloradoFlag::before {
             content: '';
             position: absolute;
-            /* Center in left-hand side */
             top: 50%;
-            left: 25px; /* Roughly 1/5th from left */
-            width: 66px; /* 2/3 of height */
+            left: 33.33%;
+            /* Center of the C is 1/3 from the left */
+            width: 66px;
+            /* 2/3 of flag height */
             height: 66px;
             transform: translate(-50%, -50%);
-            /* Red 'C' using a thick border and clipping */
-            border: 12px solid #BF0A30;
+
+            /* Create the 'C' shape */
+            border: 18px solid #bf0a30;
             border-radius: 50%;
-            clip-path: polygon(50% 0%, 100% 0%, 100% 30%, 30% 30%, 30% 70%, 100% 70%, 100% 100%, 0% 100%, 0% 0%);
             box-sizing: border-box;
+
+            /* This creates the opening on the right side of the C */
+            clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 50% 50%, 100% 65%, 100% 100%, 0% 100%);
+            z-index: 1;
         }
 
         /* Golden Disk */
@@ -128,127 +201,238 @@
             content: '';
             position: absolute;
             top: 50%;
-            left: 15%; /* Matches C position */
-            width: 30px; /* Golden disc fills the center */
+            left: 33.33%;
+            /* Must match the center of the 'C' */
+            width: 30px;
             height: 30px;
-            background-color: #ffd700; /* Gold */
+            background-color: #ffd700;
             border-radius: 50%;
             transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        #connecticuterFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-color: #0c2d83;
+        }
+
+        #floridianFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        #floridianFlag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            background-image:
+                /* Diagonal Red */
+                linear-gradient(33.69deg, transparent 43%, #a80534 43%, #a80534 57%, transparent 57%),
+                linear-gradient(-33.69deg, transparent 43%, #a80534 43%, #a80534 57%, transparent 57%);
         }
 
         #hawaiianFlag {
-        /* Dimensions (1:2 ratio) */
-        width: 150px;
-        height: 75px;
-        position: relative;
-        
-        /* 8 Stripes (White, Red, Blue) */
-        background: 
-            linear-gradient(to bottom, 
-            #fff 0%, #fff 12.5%, 
-            #c8102e 12.5%, #c8102e 25%, 
-            #012169 25%, #012169 37.5%, 
-            #fff 37.5%, #fff 50%, 
-            #c8102e 50%, #c8102e 62.5%, 
-            #012169 62.5%, #012169 75%, 
-            #fff 75%, #fff 87.5%, 
-            #c8102e 87.5%, #c8102e 100%
-            );
+            /* Dimensions (1:2 ratio) */
+            width: 150px;
+            height: 75px;
+            position: relative;
+
+            /* 8 Stripes (White, Red, Blue) */
+            background:
+                linear-gradient(to bottom,
+                    #fff 0%, #fff 12.5%,
+                    #c8102e 12.5%, #c8102e 25%,
+                    #012169 25%, #012169 37.5%,
+                    #fff 37.5%, #fff 50%,
+                    #c8102e 50%, #c8102e 62.5%,
+                    #012169 62.5%, #012169 75%,
+                    #fff 75%, #fff 87.5%,
+                    #c8102e 87.5%, #c8102e 100%);
         }
+
         /* Union Jack Canton */
         #hawaiianFlag::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%; /* Approx 7/16-1/2 */
-        height: 50%; /* 4 stripes */
-        background-color: #012169; /* Union Jack blue */
-        
-        /* Union Jack pattern (simplified) */
-        background-image:
-            /* Vertical/Horizontal Red */
-            linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
-            linear-gradient(90deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%),
-            /* Vertical/Horizontal White */
-            linear-gradient(0deg, transparent 30%, #fff 30%, #fff 70%, transparent 70%),
-            linear-gradient(90deg, transparent 40%, #fff 40%, #fff 60%, transparent 60%),
-            /* Diagonal Red */
-            linear-gradient(26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
-            linear-gradient(-26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
-            /* Diagonal White */
-            linear-gradient(26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%),
-            linear-gradient(-26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            /* Approx 7/16-1/2 */
+            height: 50%;
+            /* 4 stripes */
+            background-color: #012169;
+            /* Union Jack blue */
+
+            /* Union Jack pattern (simplified) */
+            background-image:
+                /* Vertical/Horizontal Red */
+                linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
+                linear-gradient(90deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%),
+                /* Vertical/Horizontal White */
+                linear-gradient(0deg, transparent 30%, #fff 30%, #fff 70%, transparent 70%),
+                linear-gradient(90deg, transparent 40%, #fff 40%, #fff 60%, transparent 60%),
+                /* Diagonal Red */
+                linear-gradient(26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
+                linear-gradient(-26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
+                /* Diagonal White */
+                linear-gradient(26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%),
+                linear-gradient(-26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%);
         }
 
-        #texanFlag { height: 100px; width: 150px; flex-direction: column; }
-        .txred { background-color: #bf0a30; }
-        .txblue { background-color: #002868; width: 50px; height: 100px; position: absolute; top: 0; left: 0; z-index: 1; }
-        .txstar { position: absolute; background-color: #fff; clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%); width: 35.65px; height: 35.65px; }  
-        .txstar-1 { top: 31.25px; left: 6.25px; }
+        #newMexicanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-color: #ffd700;
+        }
+
+        #oklahomanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-color: #0073cf;
+        }
+
+        #texanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+        }
+
+        .txred {
+            background-color: #bf0a30;
+        }
+
+        .txblue {
+            background-color: #002868;
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .txstar {
+            position: absolute;
+            background-color: #fff;
+            clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 68.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 31.9% 61.8%, 0% 38.2%, 38.2% 38.2%);
+            width: 35.65px;
+            height: 35.65px;
+        }
+
+        .txstar-1 {
+            top: 31.25px;
+            left: 6.25px;
+        }
     </style>
 </head>
+
 <body>
-<select id="stateSelect">
-    <option value="">Select a state</option>
-    <option value="alabama">Alabama</option>
-    <option value="alaska">Alaska</option>
-    <option value="arizona">Arizona</option>
-    <option value="colorado">Colorado</option>
-    <option value="hawaii">Hawaii</option>
-    <option value="texas">Texas</option>
-</select>
+    <select id="stateSelect">
+        <option value="">Select a state</option>
+        <option value="alabama">Alabama</option>
+        <option value="alaska">Alaska</option>
+        <option value="arizona">Arizona</option>
+        <option value="california">California</option>
+        <option value="colorado">Colorado</option>
+        <option value="connecticut">Connnecticut</option>
+        <option value="florida">Florida</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="newMexico">New Mexico</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="texas">Texas</option>
+    </select>
 
-<div id="alabamanFlag" class="flag"></div>
+    <div id="alabamanFlag" class="flag"></div>
 
-<div id="alaskanFlag" class="flag">
-    <div class="akblue" style="width: 100%; height: 100%;"></div>
-    <div class="akstar akstar-large akstar-large-1"></div>
-    <div class="akstar akstar-small akstar-small-1"></div>
-    <div class="akstar akstar-small akstar-small-2"></div>
-    <div class="akstar akstar-small akstar-small-3"></div>
-    <div class="akstar akstar-small akstar-small-4"></div>
-    <div class="akstar akstar-small akstar-small-5"></div>
-    <div class="akstar akstar-small akstar-small-6"></div>
-    <div class="akstar akstar-small akstar-small-7"></div>
-</div>
-
-<div id="arizonaFlag" class="flag"></div>
-
-<div id="coloradoFlag" class="flag"></div>
-
-<div id="hawaiianFlag" class="flag"></div>
-
-<div id="texanFlag" class="flag">
-    <div class="txblue">
-        <div class="txstar txstar-1"></div>
+    <div id="alaskanFlag" class="flag">
+        <div class="akblue" style="width: 100%; height: 100%;"></div>
+        <div class="akstar akstar-large akstar-large-1"></div>
+        <div class="akstar akstar-small akstar-small-1"></div>
+        <div class="akstar akstar-small akstar-small-2"></div>
+        <div class="akstar akstar-small akstar-small-3"></div>
+        <div class="akstar akstar-small akstar-small-4"></div>
+        <div class="akstar akstar-small akstar-small-5"></div>
+        <div class="akstar akstar-small akstar-small-6"></div>
+        <div class="akstar akstar-small akstar-small-7"></div>
     </div>
-    <div class="white" style="width: 100%; height: 50%; float: top;"></div>
-    <div class="txred" style="width: 100%; height: 50%; float: top;"></div>
-</div>
 
-<script>
-    const stateSelect = document.getElementById('stateSelect');
-    const flags = {
-        alabama: document.getElementById('alabamanFlag'),
-        alaska: document.getElementById('alaskanFlag'),
-        arizona: document.getElementById('arizonaFlag'),
-        colorado: document.getElementById('coloradoFlag'),
-        hawaii: document.getElementById('hawaiianFlag'),
-        texas: document.getElementById('texanFlag')
-    };
+    <div id="arizonanFlag" class="flag"></div>
 
-    stateSelect.addEventListener('change', function() {
-        // Hide all flags
-        for (const flag in flags) {
-            flags[flag].style.display = 'none';
-        }
+    <div id="californianFlag" class="flag">
+        <img src="https://cdn.britannica.com/46/7046-004-81F316F8.jpg" alt="California seal"
+            style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
+    </div>
 
-        const selectedState = this.value;
-        if (selectedState) {
-            flags[selectedState].style.display = 'block';
-        }
-    });
-</script>
+    <div id="coloradoFlag" class="flag"></div>
+
+    <div id="connecticuterFlag" class="flag">
+        <img src="https://cdn.britannica.com/69/7769-050-7BA8542D/flags-Connecticut-state-flag-design-arms-coat-1897.jpg"
+            alt="Connecticut seal" style="width: 132px; height: 104px; position: absolute; top: 0px; left: 0px;">
+    </div>
+
+    <div id="floridianFlag" class="flag">
+        <img src="https://iconape.com/wp-content/png_logo_vector/state-of-florida-seal-logo.png" alt="Florida seal"
+            style="width: 50px; height: 50px; position: absolute; top: 25px; left: 50px;">
+    </div>
+
+    <div id="hawaiianFlag" class="flag"></div>
+
+    <div id="newMexicanFlag" class="flag">
+        <img src="https://cdn.britannica.com/03/3003-050-F0EB2D27/flag-New-Mexico-state-flags-one-design-March-15-1925.jpg"
+            alt="New Mexico symbol" style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
+    </div>
+
+    <div id="oklahomanFlag" class="flag">
+        <img src="https://cdn.britannica.com/14/3214-050-2C7A767C/star-flag-field-Oklahoma-contest-color-sky-1941.jpg"
+            alt="Oklahoma seal" style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
+    </div>
+
+    <div id="texanFlag" class="flag">
+        <div class="txblue">
+            <div class="txstar txstar-1"></div>
+        </div>
+        <div class="white" style="width: 100%; height: 50%; float: top;"></div>
+        <div class="txred" style="width: 100%; height: 50%; float: top;"></div>
+    </div>
+
+    <script>
+        const stateSelect = document.getElementById('stateSelect');
+        const flags = {
+            alabama: document.getElementById('alabamanFlag'),
+            alaska: document.getElementById('alaskanFlag'),
+            arizona: document.getElementById('arizonanFlag'),
+            california: document.getElementById('californianFlag'),
+            colorado: document.getElementById('coloradoFlag'),
+            connecticut: document.getElementById('connecticuterFlag'),
+            florida: document.getElementById('floridianFlag'),
+            hawaii: document.getElementById('hawaiianFlag'),
+            newMexico: document.getElementById('newMexicanFlag'),
+            oklahoma: document.getElementById('oklahomanFlag'),
+            texas: document.getElementById('texanFlag')
+        };
+
+        stateSelect.addEventListener('change', function () {
+            // Hide all flags
+            for (const flag in flags) {
+                flags[flag].style.display = 'none';
+            }
+
+            const selectedState = this.value;
+            if (selectedState) {
+                flags[selectedState].style.display = 'block';
+            }
+        });
+    </script>
 </body>
+
 </html>
