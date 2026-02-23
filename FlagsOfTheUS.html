@@ -155,6 +155,14 @@
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
         }
 
+        #arkansawyerFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://tse4.mm.bing.net/th/id/OIP.VDSkTGatvDpB_Sm-nws1mgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;
+        }
+
         #californianFlag {
             height: 100px;
             width: 150px;
@@ -215,7 +223,16 @@
             height: 104px;
             width: 132px;
             flex-direction: column;
-            background-color: #0c2d83;
+            background-image: url('https://cdn.britannica.com/69/7769-050-7BA8542D/flags-Connecticut-state-flag-design-arms-coat-1897.jpg');
+            background-size: cover;
+        }
+
+        #delawareanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/03/8003-004-A80A6E85/flag-state-Delaware-diamond-arms-troops-American-December-7-1787.jpg');
+            background-size: cover;
         }
 
         #floridianFlag {
@@ -239,66 +256,157 @@
                 linear-gradient(-33.69deg, transparent 43%, #a80534 43%, #a80534 57%, transparent 57%);
         }
 
+        #georgianFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/89/889-050-BED5DE72/flag-state-battle-Georgia-field-Georgias-History-2003.jpg');
+            background-size: cover;
+        }
+
         #hawaiianFlag {
-            /* Dimensions (1:2 ratio) */
             width: 150px;
             height: 75px;
             position: relative;
-
-            /* 8 Stripes (White, Red, Blue) */
-            background:
-                linear-gradient(to bottom,
-                    #fff 0%, #fff 12.5%,
-                    #c8102e 12.5%, #c8102e 25%,
-                    #012169 25%, #012169 37.5%,
-                    #fff 37.5%, #fff 50%,
-                    #c8102e 50%, #c8102e 62.5%,
-                    #012169 62.5%, #012169 75%,
-                    #fff 75%, #fff 87.5%,
-                    #c8102e 87.5%, #c8102e 100%);
+            background: linear-gradient(to bottom,
+                    #fff 0% 12.5%, #c8102e 12.5% 25%, #012169 25% 37.5%, #fff 37.5% 50%,
+                    #c8102e 50% 62.5%, #012169 62.5% 75%, #fff 75% 87.5%, #c8102e 87.5% 100%);
         }
 
-        /* Union Jack Canton */
-        #hawaiianFlag::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            /* Approx 7/16-1/2 */
-            height: 50%;
-            /* 4 stripes */
-            background-color: #012169;
-            /* Union Jack blue */
+        #idahoanFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/88/1488-050-ACC096B0/state-flag-Idaho-military-officer-description-fact-1957.jpg');
+            background-size: cover;
+        }
 
-            /* Union Jack pattern (simplified) */
-            background-image:
-                /* Vertical/Horizontal Red */
-                linear-gradient(0deg, transparent 40%, #c8102e 40%, #c8102e 60%, transparent 60%),
-                linear-gradient(90deg, transparent 45%, #c8102e 45%, #c8102e 55%, transparent 55%),
-                /* Vertical/Horizontal White */
-                linear-gradient(0deg, transparent 30%, #fff 30%, #fff 70%, transparent 70%),
-                linear-gradient(90deg, transparent 40%, #fff 40%, #fff 60%, transparent 60%),
-                /* Diagonal Red */
-                linear-gradient(26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
-                linear-gradient(-26.5deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
-                /* Diagonal White */
-                linear-gradient(26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%),
-                linear-gradient(-26.5deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%);
+        #illinoisanFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/94/1494-050-EF017711/prizewinner-state-flag-Illinois-design-emblem-competition-1969.jpg');
+            background-size: cover;
+        }
+
+        #indianianFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/36/1636-050-6B998BAF/contest-statehood-centennial-Indiana-state-flag-field-1917.jpg');
+            background-size: cover;
+        }
+
+        #iowanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/19/1719-050-F52A41B9/state-flag-necessity-question-Iowa-World-War-1921.jpg');
+            background-size: cover;
+        }
+
+        #kansanFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/79/1879-050-EBBFCA15/state-flag-Kansas-use-bottom-name-addition-1927.jpg');
+            background-size: cover;
+        }
+
+        #kentuckianFlag {
+            height: 80px;
+            width: 152px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/01/1901-050-FF4117B4/great-seal-flags-state-Kentucky-design-government-1962.jpg');
+            background-size: cover;
+        }
+
+        #louisiananFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/93/2193-050-A967A04F/pelican-flag-Louisiana-details-American-Civil-War-1912.jpg');
+            background-size: cover;
+        }
+
+        #mainerFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/69/2269-050-C7C3CFAF/Maine-state-flags-military-troops-flag-arms-1820.jpg');
+            background-size: cover;
+        }
+
+        #marylanderFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/38/2338-050-4A2B9B8B/flag-Proprietor-state-Maryland-family-arms-Lord-1904.jpg');
+            background-size: cover;
+        }
+
+        #massachussettsianFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/45/2345-050-926722A1/flag-pine-tree-Massachusetts-state-field-arms-1971.jpg');
+            background-size: cover;
+        }
+
+        #michiganderFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/83/2583-050-2A46B866/coat-of-arms-seal-flag-Michigan-state-1865.jpg');
+            background-size: cover;
+        }
+
+        #minnisotanFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/98/2598-050-B34DB30C/Minnesota-state-flag-new.jpg');
+            background-size: cover;
+        }
+
+        #mississippianFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/69/2269-050-C7C3CFAF/Maine-state-flags-military-troops-flag-arms-1820.jpg');
+            background-size: cover;
+        }
+
+        #missourianFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/69/2269-050-C7C3CFAF/Maine-state-flags-military-troops-flag-arms-1820.jpg');
+            background-size: cover;
+        }
+
+        #montananFlag {
+            height: 104px;
+            width: 132px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/69/2269-050-C7C3CFAF/Maine-state-flags-military-troops-flag-arms-1820.jpg');
+            background-size: cover;
         }
 
         #newMexicanFlag {
             height: 100px;
             width: 150px;
             flex-direction: column;
-            background-color: #ffd700;
+            background-image: url('https://cdn.britannica.com/03/3003-050-F0EB2D27/flag-New-Mexico-state-flags-one-design-March-15-1925.jpg');
+            background-size: cover;
         }
 
         #oklahomanFlag {
             height: 100px;
             width: 150px;
             flex-direction: column;
-            background-color: #0073cf;
+            background-image: url('https://cdn.britannica.com/14/3214-050-2C7A767C/star-flag-field-Oklahoma-contest-color-sky-1941.jpg');
+            background-size: cover;
         }
 
         #texanFlag {
@@ -342,11 +450,29 @@
         <option value="alabama">Alabama</option>
         <option value="alaska">Alaska</option>
         <option value="arizona">Arizona</option>
+        <option value="arkansas">Arkansas</option>
         <option value="california">California</option>
         <option value="colorado">Colorado</option>
         <option value="connecticut">Connnecticut</option>
+        <option value="delaware">Delaware</option>
         <option value="florida">Florida</option>
+        <option value="georgia">Georgia</option>
         <option value="hawaii">Hawaii</option>
+        <option value="idaho">Idaho</option>
+        <option value="illinois">Illinois</option>
+        <option value="indiana">Indiana</option>
+        <option value="iowa">Iowa</option>
+        <option value="kansas">Kansas</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="maine">Maine</option>
+        <option value="maryland">Maryland</option>
+        <option value="massachusetts">Massachusetts</option>
+        <option value="michigan">Michigan</option>
+        <option value="minnesota">Minnesota</option>
+        <option value="mississippi">Mississippi</option>
+        <option value="missouri">Missouri</option>
+        <option value="montana">Montana</option>
         <option value="newMexico">New Mexico</option>
         <option value="oklahoma">Oklahoma</option>
         <option value="texas">Texas</option>
@@ -368,6 +494,8 @@
 
     <div id="arizonanFlag" class="flag"></div>
 
+    <div id="arkansawyerFlag" class="flag"></div>
+
     <div id="californianFlag" class="flag">
         <img src="https://cdn.britannica.com/46/7046-004-81F316F8.jpg" alt="California seal"
             style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
@@ -375,27 +503,55 @@
 
     <div id="coloradoFlag" class="flag"></div>
 
-    <div id="connecticuterFlag" class="flag">
-        <img src="https://cdn.britannica.com/69/7769-050-7BA8542D/flags-Connecticut-state-flag-design-arms-coat-1897.jpg"
-            alt="Connecticut seal" style="width: 132px; height: 104px; position: absolute; top: 0px; left: 0px;">
-    </div>
+    <div id="connecticuterFlag" class="flag"></div>
+
+    <div id="delawareanFlag" class="flag"></div>
 
     <div id="floridianFlag" class="flag">
         <img src="https://iconape.com/wp-content/png_logo_vector/state-of-florida-seal-logo.png" alt="Florida seal"
             style="width: 50px; height: 50px; position: absolute; top: 25px; left: 50px;">
     </div>
 
-    <div id="hawaiianFlag" class="flag"></div>
+    <div id="georgianFlag" class="flag"></div>
 
-    <div id="newMexicanFlag" class="flag">
-        <img src="https://cdn.britannica.com/03/3003-050-F0EB2D27/flag-New-Mexico-state-flags-one-design-March-15-1925.jpg"
-            alt="New Mexico symbol" style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
+    <div id="hawaiianFlag" class="flag">
+        <img src="https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg" alt="Union Jack"
+            style="width: 43.75%; height: 50%; position: absolute; top: 0px; left: 0px;">
     </div>
 
-    <div id="oklahomanFlag" class="flag">
-        <img src="https://cdn.britannica.com/14/3214-050-2C7A767C/star-flag-field-Oklahoma-contest-color-sky-1941.jpg"
-            alt="Oklahoma seal" style="width: 150px; height: 100px; position: absolute; top: 0px; left: 0px;">
-    </div>
+    <div id="idahoanFlag" class="flag"></div>
+
+    <div id="illinoisanFlag" class="flag"></div>
+
+    <div id="indianianFlag" class="flag"></div>
+
+    <div id="iowanFlag" class="flag"></div>
+
+    <div id="kansanFlag" class="flag"></div>
+
+    <div id="kentuckianFlag" class="flag"></div>
+
+    <div id="louisiananFlag" class="flag"></div>
+
+    <div id="mainerFlag" class="flag"></div>
+
+    <div id="marylanderFlag" class="flag"></div>
+
+    <div id="massachussettsianFlag" class="flag"></div>
+
+    <div id="michiganderFlag" class="flag"></div>
+
+    <div id="minnisotanFlag" class="flag"></div>
+
+    <div id="mississippianFlag" class="flag"></div>
+
+    <div id="missourianFlag" class="flag"></div>
+
+    <div id="montananFlag" class="flag"></div>
+
+    <div id="newMexicanFlag" class="flag"></div>
+
+    <div id="oklahomanFlag" class="flag"></div>
 
     <div id="texanFlag" class="flag">
         <div class="txblue">
@@ -411,11 +567,29 @@
             alabama: document.getElementById('alabamanFlag'),
             alaska: document.getElementById('alaskanFlag'),
             arizona: document.getElementById('arizonanFlag'),
+            arkansas: document.getElementById('arkansawyerFlag'),
             california: document.getElementById('californianFlag'),
             colorado: document.getElementById('coloradoFlag'),
             connecticut: document.getElementById('connecticuterFlag'),
+            delaware: document.getElementById('delawareanFlag'),
             florida: document.getElementById('floridianFlag'),
+            georgia: document.getElementById('georgianFlag'),
             hawaii: document.getElementById('hawaiianFlag'),
+            idaho: document.getElementById('idahoanFlag'),
+            illinois: document.getElementById('illinoisanFlag'),
+            indiana: document.getElementById('indianianFlag'),
+            iowa: document.getElementById('iowanFlag'),
+            kansas: document.getElementById('kansanFlag'),
+            kentucky: document.getElementById('kentuckianFlag'),
+            louisiana: document.getElementById('louisiananFlag'),
+            maine: document.getElementById('mainerFlag'),
+            maryland: document.getElementById('marylanderFlag'),
+            massachusetts: document.getElementById('massachussettsianFlag'),
+            michigan: document.getElementById('michiganderFlag'),
+            minnesota: document.getElementById('minnisotanFlag'),
+            mississippi: document.getElementById('mississippianFlag'),
+            missouri: document.getElementById('missourianFlag'),
+            montana: document.getElementById('montananFlag'),
             newMexico: document.getElementById('newMexicanFlag'),
             oklahoma: document.getElementById('oklahomanFlag'),
             texas: document.getElementById('texanFlag')
