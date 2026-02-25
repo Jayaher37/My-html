@@ -15,6 +15,13 @@
             overflow: hidden;
         }
 
+        .flagNonrectangular {
+            display: none;
+            top: 6px;
+            position: relative;
+            overflow: hidden;
+        }
+
         #alabamanFlag {
             height: 100px;
             width: 150px;
@@ -393,12 +400,130 @@
             background-size: cover;
         }
 
+        #nebraskanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/48/2948-004-72F527B1/state-banner-Nebraska-flag-flags-seal-design-1963.jpg');
+            background-size: cover;
+        }
+
+        #nevadanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/86/2986-050-F76962E5/state-flag-times-Nevada-one-design-contest-1953.jpg');
+            background-size: cover;
+        }
+
+        #newHampshiriteFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/96/2996-050-97AB5B46/Provision-state-flag-New-Hampshire-military-purposes-1931.jpg');
+            background-size: cover;
+        }
+
+        #newJerseyanFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/99/2999-050-43E57A0F/state-flag-New-Jersey-George-Washington-field-1779.jpg');
+            background-size: cover;
+        }
+
         #newMexicanFlag {
             height: 100px;
             width: 150px;
             flex-direction: column;
             background-image: url('https://cdn.britannica.com/03/3003-050-F0EB2D27/flag-New-Mexico-state-flags-one-design-March-15-1925.jpg');
             background-size: cover;
+        }
+
+        #newYorkanFlag {
+            height: 96px;
+            width: 156px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/14/3014-050-17B84006/flag-New-York-color-uniforms-facings-American-1909.jpg');
+            background-size: cover;
+        }
+
+        #northCarolinanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://www.theflagfactory.com/wp-content/uploads/2017/10/North-Carolina-flag.jpg');
+            background-size: cover;
+        }
+
+        #northDakotanFlag {
+            height: 117px;
+            width: 148.5px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/88/3088-004-E8605DCF/flag-North-Dakota-National-Guard-change-state-1911.jpg');
+            background-size: cover;
+        }
+
+        /* 1. The Shadow Wrapper: This makes the 1px border follow the V-cut */
+        .ohio-wrapper {
+            display: none;
+            width: 156px;
+            height: 96px;
+            /* Apply border here. It 'sees' the shape of its child. */
+            filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000);
+        }
+
+        /* 2. The Clip Layer: Cuts the 'V' shape */
+        .ohio-shape {
+            width: 156px;
+            height: 96px;
+            background-color: #fff;
+            /* This MUST be on the element immediately inside the shadow wrapper */
+            clip-path: polygon(0% 0%, 100% 0%, 75% 50%, 100% 100%, 0% 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .oh-stripes {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#c12637 0% 20%, #fff 20% 40%,
+                    #c12637 40% 60%, #fff 60% 80%,
+                    #c12637 80% 100%);
+        }
+
+        .oh-blue-field {
+            background-color: #0e3f75;
+            width: 80px;
+            /* Adjust width to preference */
+            height: 96px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            /* This makes the blue part a triangle */
+            clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        }
+
+        .oh-buckeye-o {
+            position: absolute;
+            background-color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            top: 32px;
+            left: 8px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .oh-red-center {
+            background-color: #c12637;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
         }
 
         #oklahomanFlag {
@@ -445,37 +570,45 @@
 </head>
 
 <body>
-    <select id="stateSelect">
-        <option value="">Select a state</option>
-        <option value="alabama">Alabama</option>
-        <option value="alaska">Alaska</option>
-        <option value="arizona">Arizona</option>
-        <option value="arkansas">Arkansas</option>
-        <option value="california">California</option>
-        <option value="colorado">Colorado</option>
-        <option value="connecticut">Connnecticut</option>
-        <option value="delaware">Delaware</option>
-        <option value="florida">Florida</option>
-        <option value="georgia">Georgia</option>
-        <option value="hawaii">Hawaii</option>
-        <option value="idaho">Idaho</option>
-        <option value="illinois">Illinois</option>
-        <option value="indiana">Indiana</option>
-        <option value="iowa">Iowa</option>
-        <option value="kansas">Kansas</option>
-        <option value="kentucky">Kentucky</option>
-        <option value="louisiana">Louisiana</option>
-        <option value="maine">Maine</option>
-        <option value="maryland">Maryland</option>
-        <option value="massachusetts">Massachusetts</option>
-        <option value="michigan">Michigan</option>
-        <option value="minnesota">Minnesota</option>
-        <option value="mississippi">Mississippi</option>
-        <option value="missouri">Missouri</option>
-        <option value="montana">Montana</option>
-        <option value="newMexico">New Mexico</option>
-        <option value="oklahoma">Oklahoma</option>
-        <option value="texas">Texas</option>
+    <select id="flagSelector" onchange="showFlag()">
+        <option value="">-- Select a Flag --</option>
+        <option value="alabamanFlag">Alabama</option>
+        <option value="alaskanFlag">Alaska</option>
+        <option value="arizonanFlag">Arizona</option>
+        <option value="arkansawyerFlag">Arkansas</option>
+        <option value="californianFlag">California</option>
+        <option value="coloradoFlag">Colorado</option>
+        <option value="connecticuterFlag">Connecticut</option>
+        <option value="delawareanFlag">Delaware</option>
+        <option value="floridianFlag">Florida</option>
+        <option value="georgianFlag">Georgia</option>
+        <option value="hawaiianFlag">Hawaii</option>
+        <option value="idahoanFlag">Idaho</option>
+        <option value="illinoisanFlag">Illinois</option>
+        <option value="indianianFlag">Indiana</option>
+        <option value="iowanFlag">Iowa</option>
+        <option value="kansanFlag">Kansas</option>
+        <option value="kentuckianFlag">Kentucky</option>
+        <option value="louisiananFlag">Louisiana</option>
+        <option value="mainerFlag">Maine</option>
+        <option value="marylanderFlag">Maryland</option>
+        <option value="massachussettsianFlag">Massachusetts</option>
+        <option value="michiganderFlag">Michigan</option>
+        <option value="minnisotanFlag">Minnesota</option>
+        <option value="mississippianFlag">Mississippi</option>
+        <option value="missourianFlag">Missouri</option>
+        <option value="montananFlag">Montana</option>
+        <option value="nebraskanFlag">Nebraska</option>
+        <option value="nevadanFlag">Nevada</option>
+        <option value="newHampshiriteFlag">New Hampshire</option>
+        <option value="newJerseyanFlag">New Jersey</option>
+        <option value="newMexicanFlag">New Mexico</option>
+        <option value="newYorkanFlag">New York</option>
+        <option value="northCarolinanFlag">North Carolina</option>
+        <option value="northDakotanFlag">North Dakota</option>
+        <option value="ohioContainer">Ohio</option>
+        <option value="oklahomanFlag">Oklahoma</option>
+        <option value="texanFlag">Texas</option>
     </select>
 
     <div id="alabamanFlag" class="flag"></div>
@@ -549,7 +682,32 @@
 
     <div id="montananFlag" class="flag"></div>
 
+    <div id="nebraskanFlag" class="flag"></div>
+
+    <div id="nevadanFlag" class="flag"></div>
+
+    <div id="newHampshiriteFlag" class="flag"></div>
+
+    <div id="newJerseyanFlag" class="flag"></div>
+
     <div id="newMexicanFlag" class="flag"></div>
+
+    <div id="newYorkanFlag" class="flag"></div>
+
+    <div id="northCarolinanFlag" class="flag"></div>
+
+    <div id="northDakotanFlag" class="flag"></div>
+
+    <div id="ohioContainer" class="flagNonrectangular ohio-wrapper">
+        <div class="ohio-shape">
+            <div class="oh-stripes"></div>
+            <div class="oh-blue-field">
+                <div class="oh-buckeye-o">
+                    <div class="oh-red-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="oklahomanFlag" class="flag"></div>
 
@@ -562,50 +720,21 @@
     </div>
 
     <script>
-        const stateSelect = document.getElementById('stateSelect');
-        const flags = {
-            alabama: document.getElementById('alabamanFlag'),
-            alaska: document.getElementById('alaskanFlag'),
-            arizona: document.getElementById('arizonanFlag'),
-            arkansas: document.getElementById('arkansawyerFlag'),
-            california: document.getElementById('californianFlag'),
-            colorado: document.getElementById('coloradoFlag'),
-            connecticut: document.getElementById('connecticuterFlag'),
-            delaware: document.getElementById('delawareanFlag'),
-            florida: document.getElementById('floridianFlag'),
-            georgia: document.getElementById('georgianFlag'),
-            hawaii: document.getElementById('hawaiianFlag'),
-            idaho: document.getElementById('idahoanFlag'),
-            illinois: document.getElementById('illinoisanFlag'),
-            indiana: document.getElementById('indianianFlag'),
-            iowa: document.getElementById('iowanFlag'),
-            kansas: document.getElementById('kansanFlag'),
-            kentucky: document.getElementById('kentuckianFlag'),
-            louisiana: document.getElementById('louisiananFlag'),
-            maine: document.getElementById('mainerFlag'),
-            maryland: document.getElementById('marylanderFlag'),
-            massachusetts: document.getElementById('massachussettsianFlag'),
-            michigan: document.getElementById('michiganderFlag'),
-            minnesota: document.getElementById('minnisotanFlag'),
-            mississippi: document.getElementById('mississippianFlag'),
-            missouri: document.getElementById('missourianFlag'),
-            montana: document.getElementById('montananFlag'),
-            newMexico: document.getElementById('newMexicanFlag'),
-            oklahoma: document.getElementById('oklahomanFlag'),
-            texas: document.getElementById('texanFlag')
-        };
+        function showFlag() {
+            // 1. Get the selected ID from the dropdown
+            var selectedId = document.getElementById("flagSelector").value;
 
-        stateSelect.addEventListener('change', function () {
-            // Hide all flags
-            for (const flag in flags) {
-                flags[flag].style.display = 'none';
+            // 2. Hide ALL elements with the class 'flag'
+            var allFlags = document.getElementsByClassName("flag");
+            for (var i = 0; i < allFlags.length; i++) {
+                allFlags[i].style.display = "none";
             }
 
-            const selectedState = this.value;
-            if (selectedState) {
-                flags[selectedState].style.display = 'block';
+            // 3. Show only the one selected
+            if (selectedId) {
+                document.getElementById(selectedId).style.display = "block";
             }
-        });
+        }
     </script>
 </body>
 
