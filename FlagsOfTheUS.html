@@ -113,6 +113,15 @@
             border: 1px solid #000;
         }
 
+        #americanSamoanFlag {
+            height: 80px;
+            width: 152px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/53/69553-050-D8C6DA5E/Flag-of-American-Samoa.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
         /* 13 Rays (Red and Gold) */
         #arizonanFlag::before {
             content: '';
@@ -240,6 +249,43 @@
             border: 1px solid #000;
         }
 
+        #dcanFlag {
+            width: 150px;
+            height: 75px;
+            position: relative;
+            background: linear-gradient(to bottom,
+                    #fff 0% 30%,
+                    #e92228 30% 50%,
+                    #fff 50% 60%,
+                    #e92228 60% 80%,
+                    #fff 80% 100%);
+            border: 1px solid #000;
+        }
+
+        .dcstar {
+            position: absolute;
+            width: 15px;
+            /* Slightly smaller to fit the 75px height */
+            height: 15px;
+            background-color: #e92228;
+            top: 4px;
+            /* Centered in the top white section */
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        /* Positioning the three stars */
+        .dcstar-left {
+            left: 25.75px;
+        }
+
+        .dcstar-center {
+            left: 66.5px;
+        }
+
+        .dcstar-right {
+            left: 107.25px;
+        }
+
         #floridianFlag {
             height: 100px;
             width: 150px;
@@ -267,6 +313,15 @@
             width: 150px;
             flex-direction: column;
             background-image: url('https://cdn.britannica.com/89/889-050-BED5DE72/flag-state-battle-Georgia-field-Georgias-History-2003.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #guamanianFlag {
+            height: 88px;
+            width: 164px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/61/69561-004-A15C446C/Flag-Guam.jpg');
             background-size: cover;
             border: 1px solid #000;
         }
@@ -488,6 +543,15 @@
             border: 1px solid #000;
         }
 
+        #chamorroFlag {
+            height: 75px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/65/69565-050-2510455C/Flag-Northern-Mariana-Islands.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
         /* 1. The Shadow Wrapper: This makes the 1px border follow the V-cut */
         .ohio-wrapper {
             display: none;
@@ -584,47 +648,105 @@
 
         /* 13 Stars circling the 'O' (Center point: 48px vertical, 30px horizontal) */
         .s1 {
-            top: 20.25px;
-            left: 25.25px;
+            top: 23.22px;
+            left: 38px;
+            transform: rotate(30deg);
         }
 
         .s2 {
-            top: 27.1px;
-            left: 14.25px;
+            top: 20px;
+            left: 26px;
         }
 
         .s3 {
-            top: 32.25px;
-            left: 0px;
+            top: 23.22px;
+            left: 14px;
+            transform: rotate(330deg);
         }
 
         .s4 {
-            top: 44.25px;
-            left: 3.25px;
+            top: 32px;
+            left: 5.22px;
+            transform: rotate(300deg);
         }
+
+        .s5 {
+            top: 44px;
+            left: 2px;
+            transform: rotate(270deg);
+        }
+
+        .s6 {
+            top: 56px;
+            left: 5.22px;
+            transform: rotate(240deg);
+        }
+
         .s7 {
-            top: 68.25px;
-            left: 25.25px;
+            top: 64.78px;
+            left: 14px;
+            transform: rotate(210deg);
         }
+
+        .s8 {
+            top: 68px;
+            left: 26px;
+            transform: rotate(180deg);
+        }
+
+        .s9 {
+            top: 64.78px;
+            left: 38px;
+            transform: rotate(150deg);
+        }
+
+        .s10 {
+            top: 10.17px;
+            left: 13.69px;
+            transform: rotate(340deg);
+        }
+
+        .s11 {
+            top: 16.42px;
+            left: 2.86px;
+            transform: rotate(320deg);
+        }
+
+        .s12 {
+            top: 71.58px;
+            left: 2.86px;
+            transform: rotate(220deg);
+        }
+
+        .s13 {
+            top: 77.83px;
+            left: 13.69px;
+            transform: rotate(200deg);
+        }
+
         /* 4 Stars at the point (Apex stars) */
         .s14 {
-            top: 32px;
-            left: 66px;
+            top: 44px;
+            left: 50px;
+            transform: rotate(18deg);
         }
 
         .s15 {
-            top: 44px;
-            left: 78px;
+            top: 37.75px;
+            left: 61.45px;
+            transform: rotate(8deg);
         }
 
         .s16 {
-            top: 56px;
-            left: 66px;
+            top: 50.25px;
+            left: 61.45px;
+            transform: rotate(28deg);
         }
 
         .s17 {
             top: 44px;
-            left: 56px;
+            left: 74px;
+            transform: rotate(18deg);
         }
 
 
@@ -633,6 +755,94 @@
             width: 150px;
             flex-direction: column;
             background-image: url('https://cdn.britannica.com/14/3214-050-2C7A767C/star-flag-field-Oklahoma-contest-color-sky-1941.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #oregonianFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/57/3257-050-4C9B22FA/state-flag-Oregon-distinction-escutcheon-gold-field-1859.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #pennsylvanianFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/29/3429-004-4A64B1C5/Pennsylvania-state-flag-William-Penn-blue-coat-1777.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #puertoRicanflag {
+            width: 150px;
+            height: 100px;
+            position: relative;
+            /* 5 equal stripes: Red, White, Red, White, Red */
+            background: linear-gradient(to bottom,
+                    #e92228 0% 20%, #fff 20% 40%, #e92228 40% 60%,
+                    #fff 60% 80%, #e92228 80% 100%);
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+
+        .blue-triangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 86.6px;
+            /* Extends to the middle */
+            height: 100%;
+            background-color: #3a5eab;
+            clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        }
+
+        .star {
+            position: absolute;
+            top: 33.3px;
+            left: 12.22px;
+            width: 33.33px;
+            height: 33.33px;
+            background-color: #fff;
+            z-index: 2;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        #rhodeIslanderFlag {
+            height: 130.5px;
+            width: 148.5px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/48/3748-050-B24F11E7/anchor-flag-one-pervasive-Rhode-Island-American-1897.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #southCarolinanFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/14/4314-050-9ABD8FD8/state-flag-South-Carolina-Union-fort-palmetto-1861.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #southDakotanFlag {
+            height: 95px;
+            width: 152px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/18/4318-050-1F1768F9/flag-South-Dakota-song-sun-legislation-designers-July-1-1992.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #tennesseanFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/42/4642-004-4871942A/flag-state-Tennessee-Centennial-Exposition-presidents-captain-1905.jpg');
             background-size: cover;
             border: 1px solid #000;
         }
@@ -670,6 +880,78 @@
             top: 31.25px;
             left: 6.25px;
         }
+
+        #virginIslanderFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/66/69566-050-3FCBF007/Flag-US-Virgin-Islands.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #utahnFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/79/4879-050-55C3BF7D/Daughters-of-the-American-Revolution-flag-chapter-1913.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #vermonterFlag {
+            height: 90px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/10/4910-050-EFA8FDF3/Vermont-flag-any-republic-state-stripes-stars-1923.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #virginianFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/40/4940-050-4FE93AA0/Flag-Virginia.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #washingtonianFlag {
+            height: 95px;
+            width: 152px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/98/4998-050-180D0667/state-flag-field-Daughters-of-the-American-1915.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #westVirginianFlag {
+            height: 80px;
+            width: 152px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/37/5137-050-627F0A5F/flag-West-Virginia-Louisiana-Purchase-Exposition-design-1929.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #wisconsiniteFlag {
+            height: 100px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/97/5197-050-8812E38F/state-flags-Wisconsin-law-name-coat-of-1981.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
+
+        #wyomingiteFlag {
+            height: 105px;
+            width: 150px;
+            flex-direction: column;
+            background-image: url('https://cdn.britannica.com/38/5238-050-C4B3E388/flag-citizen-Wyoming-response-contest-field-border-1917.jpg');
+            background-size: cover;
+            border: 1px solid #000;
+        }
     </style>
 </head>
 
@@ -678,13 +960,16 @@
         <option value="">-- Select a Flag --</option>
         <option value="alabamanFlag">Alabama</option>
         <option value="alaskanFlag">Alaska</option>
+        <option value="americanSamoanFlag" style="font-weight: bold">American Samoa</option>
         <option value="arizonanFlag">Arizona</option>
         <option value="arkansawyerFlag">Arkansas</option>
         <option value="californianFlag">California</option>
         <option value="coloradoFlag">Colorado</option>
         <option value="connecticuterFlag">Connecticut</option>
         <option value="delawareanFlag">Delaware</option>
+        <option value="dcanFlag" style="font-style:citalic">District of Columbia</option>
         <option value="floridianFlag">Florida</option>
+        <option value="guamanianFlag" style="font-weight: bold">Guam</option>
         <option value="georgianFlag">Georgia</option>
         <option value="hawaiianFlag">Hawaii</option>
         <option value="idahoanFlag">Idaho</option>
@@ -710,9 +995,25 @@
         <option value="newYorkanFlag">New York</option>
         <option value="northCarolinanFlag">North Carolina</option>
         <option value="northDakotanFlag">North Dakota</option>
+        <option value="chamorroFlag" style="font-weight: bold">Northern Mariana Islands</option>
         <option value="ohioContainer">Ohio</option>
         <option value="oklahomanFlag">Oklahoma</option>
+        <option value="oregonianFlag">Oregon</option>
+        <option value="pennsylvanianFlag">Pennsylvania</option>
+        <option value="puertoRicanflag" style="font-weight: bold">Puerto Rico</option>
+        <option value="rhodeIslanderFlag">Rhode Island</option>
+        <option value="southCarolinanFlag">South Carolina</option>
+        <option value="southDakotanFlag">South Dakota</option>
+        <option value="tennesseanFlag">Tennessee</option>
         <option value="texanFlag">Texas</option>
+        <option value="virginIslanderFlag" style="font-weight: bold">U.S. Virgin Islands</option>
+        <option value="utahnFlag">Utah</option>
+        <option value="vermonterFlag">Vermont</option>
+        <option value="virginianFlag">Virginia</option>
+        <option value="washingtonianFlag">Washington</option>
+        <option value="westVirginianFlag">West Virginia</option>
+        <option value="wisconsiniteFlag">Wisconsin</option>
+        <option value="wyomingiteFlag">Wyoming</option>
     </select>
 
     <div id="alabamanFlag" class="flag"></div>
@@ -729,6 +1030,8 @@
         <div class="akstar akstar-small akstar-small-7"></div>
     </div>
 
+    <div id="americanSamoanFlag" class="flag"></div>
+
     <div id="arizonanFlag" class="flag"></div>
 
     <div id="arkansawyerFlag" class="flag"></div>
@@ -744,12 +1047,20 @@
 
     <div id="delawareanFlag" class="flag"></div>
 
+    <div id="dcanFlag" class="flag">
+        <div class="dcstar dcstar-left"></div>
+        <div class="dcstar dcstar-center"></div>
+        <div class="dcstar dcstar-right"></div>
+    </div>
+
     <div id="floridianFlag" class="flag">
         <img src="https://iconape.com/wp-content/png_logo_vector/state-of-florida-seal-logo.png" alt="Florida seal"
             style="width: 50px; height: 50px; position: absolute; top: 25px; left: 50px;">
     </div>
 
     <div id="georgianFlag" class="flag"></div>
+
+    <div id="guamanianFlag" class="flag"></div>
 
     <div id="hawaiianFlag" class="flag">
         <img src="https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg" alt="Union Jack"
@@ -802,6 +1113,8 @@
 
     <div id="northDakotanFlag" class="flag"></div>
 
+    <div id="chamorroFlag" class="flag"></div>
+
     <div id="ohioContainer" class="flag ohio-wrapper">
         <div class="ohio-shape">
             <div class="oh-red-stripe oh-stripe-top"></div>
@@ -821,7 +1134,6 @@
                 <div class="oh-star s11"></div>
                 <div class="oh-star s12"></div>
                 <div class="oh-star s13"></div>
-
                 <!-- Star Point -->
                 <div class="oh-star s14"></div>
                 <div class="oh-star s15"></div>
@@ -836,6 +1148,23 @@
 
     <div id="oklahomanFlag" class="flag"></div>
 
+    <div id="oregonianFlag" class="flag"></div>
+
+    <div id="pennsylvanianFlag" class="flag"></div>
+
+    <div id="puertoRicanflag" class="flag">
+        <div class="blue-triangle"></div>
+        <div class="star"></div>
+    </div>
+
+    <div id="rhodeIslanderFlag" class="flag"></div>
+
+    <div id="southCarolinanFlag" class="flag"></div>
+
+    <div id="southDakotanFlag" class="flag"></div>
+
+    <div id="tennesseanFlag" class="flag"></div>
+
     <div id="texanFlag" class="flag">
         <div class="txblue">
             <div class="txstar txstar-1"></div>
@@ -843,6 +1172,22 @@
         <div class="white" style="width: 100%; height: 50%; float: top;"></div>
         <div class="txred" style="width: 100%; height: 50%; float: top;"></div>
     </div>
+
+    <div id="virginIslanderFlag" class="flag"></div>
+
+    <div id="utahnFlag" class="flag"></div>
+
+    <div id="vermonterFlag" class="flag"></div>
+
+    <div id="virginianFlag" class="flag"></div>
+
+    <div id="washingtonianFlag" class="flag"></div>
+
+    <div id="westVirginianFlag" class="flag"></div>
+
+    <div id="wisconsiniteFlag" class="flag"></div>
+
+    <div id="wyomingiteFlag" class="flag"></div>
 
     <script>
         function showFlag() {
@@ -862,5 +1207,4 @@
         }
     </script>
 </body>
-
 </html>
